@@ -11,6 +11,8 @@ ClusterMetricsSink
 it comes with k8s cluster out of box which is create by PKS, in pks-system namespace.
 
 ### deploy ClusterMetricSink
+deploy ClusterMetricSink to each k8s cluster.
+
 ```
 apiVersion: apps.pivotal.io/v1beta1
 kind: ClusterMetricSink
@@ -35,7 +37,13 @@ $kubectl get svc --all-namespaces
 NAMESPACE     NAME                   TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        
 pks-system    kube-state-metrics     ClusterIP   10.100.200.14    <none>        8080/TCP,8081/TCP   
 ```
+deploy to k8s cluster.
 
+```
+
+kubectl apply -f ClusterMetricSink.yml -n pks-system
+
+```
 
 ### install Reliability View for PCF
 - Prometheus Server, Grafana will deployed by Reliability View for PCF.
@@ -51,7 +59,7 @@ pks-system    kube-state-metrics     ClusterIP   10.100.200.14    <none>        
   static_configs:
     - targets:
       - "<K8s_worker_node_ip>:9273" 
-      
+
 - job_name: <unique name for display>
   metrics_path: /metrics
   scheme: http
@@ -69,9 +77,8 @@ pks-system    kube-state-metrics     ClusterIP   10.100.200.14    <none>        
 
 
 ## setup grafana
-
-import grafana dashboard from <THIS REPO>ClusterMetricSink>granfa>xxx.json via grafana UI 
-
-
+- WARNING: dashboard template is just draft and should be modified or configured before using.
+- import grafana dashboard from <THIS REPO>ClusterMetricSink>granfa>xxx.json via grafana UI 
+- prometheus server will automatically collect metrics from ClusterMetricSink in each k8s cluster.
 
 
