@@ -78,5 +78,6 @@ kubectl apply -f ClusterMetricSink.yml -n pks-system
 - WARNING: dashboard template is just draft and should be modified or configured before using.
 - import grafana dashboard from <THIS REPO>ClusterMetricSink>granfa>xxx.json via grafana UI 
 - prometheus server will automatically collect metrics from ClusterMetricSink in each k8s cluster.
-
+  
+[![screenshot](/grafana.png)]
 
