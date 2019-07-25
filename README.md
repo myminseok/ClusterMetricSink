@@ -1,4 +1,4 @@
-ClusterMetricsSink 
+# ClusterMetricsSink 
 
 ```
 <kube-state-metrics(pod)>  <== <ClusterMetricsSink(pod)> <== <Prometheus Server> <== <Grafana>
@@ -12,7 +12,6 @@ it comes with k8s cluster out of box which is create by PKS, in pks-system names
 
 ### deploy ClusterMetricSink
 deploy ClusterMetricSink to each k8s cluster.
-
 ```
 apiVersion: apps.pivotal.io/v1beta1
 kind: ClusterMetricSink
@@ -31,24 +30,23 @@ spec:
     path: "/metrics"
 
 ```
-- replace <YOUR-svc-CLUSTER-IP> with CLUSTER-IP of kube-state-metrics :
-  ```
+- replace <YOUR-svc-CLUSTER-IP> with CLUSTER-IP of kube-state-metrics 
+  
+```
 $kubectl get svc --all-namespaces
 NAMESPACE     NAME                   TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        
 pks-system    kube-state-metrics     ClusterIP   10.100.200.14    <none>        8080/TCP,8081/TCP   
 ```
+  
 deploy to k8s cluster.
 
 ```
-
 kubectl apply -f ClusterMetricSink.yml -n pks-system
-
 ```
 
 ### install Reliability View for PCF
 - Prometheus Server, Grafana will deployed by Reliability View for PCF.
 - setup scrape configutation on 'Additional Scrape Config Jobs' under TSDB configuration section.
-
 ```
 - job_name: <unique name for display>
   metrics_path: /metrics
