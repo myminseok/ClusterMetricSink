@@ -1,0 +1,105 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2019-07-23T05:20:08Z"
+  generateName: kube-state-metrics-5c4f5b885f-
+  labels:
+    grafanak8sapp: "true"
+    k8s-app: kube-state-metrics
+    pod-template-hash: 5c4f5b885f
+  name: kube-state-metrics-5c4f5b885f-9rtmh
+  namespace: kube-system
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: ReplicaSet
+    name: kube-state-metrics-5c4f5b885f
+    uid: 89a85bbc-ad09-11e9-a0eb-005056963a93
+  resourceVersion: "532692"
+  selfLink: /api/v1/namespaces/kube-system/pods/kube-state-metrics-5c4f5b885f-9rtmh
+  uid: 89abca0b-ad09-11e9-a0eb-005056963a93
+spec:
+  containers:
+  - image: quay.io/coreos/kube-state-metrics:v1.1.0
+    imagePullPolicy: IfNotPresent
+    name: kube-state-metrics
+    ports:
+    - containerPort: 8080
+      name: http-metrics
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: 8080
+        scheme: HTTP
+      initialDelaySeconds: 5
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 5
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-fs74b
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: 4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: default-token-fs74b
+    secret:
+      defaultMode: 420
+      secretName: default-token-fs74b
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2019-07-23T05:20:08Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2019-07-23T05:20:23Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2019-07-23T05:20:23Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2019-07-23T05:20:08Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://8ceeb1644415ea11045fd1c3cadb546320abba339802ba242dcbf773885ab06e
+    image: quay.io/coreos/kube-state-metrics:v1.1.0
+    imageID: docker-pullable://quay.io/coreos/kube-state-metrics@sha256:52a2c47355c873709bb4e37e990d417e9188c2a778a0c38ed4c09776ddc54efb
+    lastState: {}
+    name: kube-state-metrics
+    ready: true
+    restartCount: 0
+    state:
+      running:
+        startedAt: "2019-07-23T05:20:18Z"
+  hostIP: 10.10.14.42
+  phase: Running
+  podIP: 10.200.25.10
+  qosClass: BestEffort
+  startTime: "2019-07-23T05:20:08Z"

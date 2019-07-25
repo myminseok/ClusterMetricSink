@@ -1,0 +1,995 @@
+# HELP kube_daemonset_created Unix creation timestamp
+# TYPE kube_daemonset_created gauge
+kube_daemonset_created{daemonset="fluent-bit",namespace="pks-system"} 1.563454142e+09
+kube_daemonset_created{daemonset="node-exporter",namespace="kube-system"} 1.563859208e+09
+kube_daemonset_created{daemonset="telegraf",namespace="pks-system"} 1.563454142e+09
+kube_daemonset_created{daemonset="vrops-cadvisor",namespace="pks-system"} 1.563454179e+09
+# HELP kube_daemonset_metadata_generation Sequence number representing a specific generation of the desired state.
+# TYPE kube_daemonset_metadata_generation gauge
+kube_daemonset_metadata_generation{daemonset="fluent-bit",namespace="pks-system"} 1
+kube_daemonset_metadata_generation{daemonset="node-exporter",namespace="kube-system"} 1
+kube_daemonset_metadata_generation{daemonset="telegraf",namespace="pks-system"} 1
+kube_daemonset_metadata_generation{daemonset="vrops-cadvisor",namespace="pks-system"} 1
+# HELP kube_daemonset_status_current_number_scheduled The number of nodes running at least one daemon pod and are supposed to.
+# TYPE kube_daemonset_status_current_number_scheduled gauge
+kube_daemonset_status_current_number_scheduled{daemonset="fluent-bit",namespace="pks-system"} 2
+kube_daemonset_status_current_number_scheduled{daemonset="node-exporter",namespace="kube-system"} 2
+kube_daemonset_status_current_number_scheduled{daemonset="telegraf",namespace="pks-system"} 2
+kube_daemonset_status_current_number_scheduled{daemonset="vrops-cadvisor",namespace="pks-system"} 2
+# HELP kube_daemonset_status_desired_number_scheduled The number of nodes that should be running the daemon pod.
+# TYPE kube_daemonset_status_desired_number_scheduled gauge
+kube_daemonset_status_desired_number_scheduled{daemonset="fluent-bit",namespace="pks-system"} 2
+kube_daemonset_status_desired_number_scheduled{daemonset="node-exporter",namespace="kube-system"} 2
+kube_daemonset_status_desired_number_scheduled{daemonset="telegraf",namespace="pks-system"} 2
+kube_daemonset_status_desired_number_scheduled{daemonset="vrops-cadvisor",namespace="pks-system"} 2
+# HELP kube_daemonset_status_number_misscheduled The number of nodes running a daemon pod but are not supposed to.
+# TYPE kube_daemonset_status_number_misscheduled gauge
+kube_daemonset_status_number_misscheduled{daemonset="fluent-bit",namespace="pks-system"} 0
+kube_daemonset_status_number_misscheduled{daemonset="node-exporter",namespace="kube-system"} 0
+kube_daemonset_status_number_misscheduled{daemonset="telegraf",namespace="pks-system"} 0
+kube_daemonset_status_number_misscheduled{daemonset="vrops-cadvisor",namespace="pks-system"} 0
+# HELP kube_daemonset_status_number_ready The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and ready.
+# TYPE kube_daemonset_status_number_ready gauge
+kube_daemonset_status_number_ready{daemonset="fluent-bit",namespace="pks-system"} 2
+kube_daemonset_status_number_ready{daemonset="node-exporter",namespace="kube-system"} 0
+kube_daemonset_status_number_ready{daemonset="telegraf",namespace="pks-system"} 2
+kube_daemonset_status_number_ready{daemonset="vrops-cadvisor",namespace="pks-system"} 2
+# HELP kube_deployment_created Unix creation timestamp
+# TYPE kube_deployment_created gauge
+kube_deployment_created{deployment="coredns",namespace="kube-system"} 1.563454127e+09
+kube_deployment_created{deployment="event-controller",namespace="pks-system"} 1.563454142e+09
+kube_deployment_created{deployment="kube-state-metrics",namespace="kube-system"} 1.563859208e+09
+kube_deployment_created{deployment="kubernetes-dashboard",namespace="kube-system"} 1.563454135e+09
+kube_deployment_created{deployment="metric-controller",namespace="pks-system"} 1.563454142e+09
+kube_deployment_created{deployment="metrics-server",namespace="kube-system"} 1.563454132e+09
+kube_deployment_created{deployment="observability-manager",namespace="pks-system"} 1.563454138e+09
+kube_deployment_created{deployment="sink-controller",namespace="pks-system"} 1.563454142e+09
+kube_deployment_created{deployment="telemetry-agent",namespace="pks-system"} 1.563859017e+09
+kube_deployment_created{deployment="validator",namespace="pks-system"} 1.563454142e+09
+# HELP kube_deployment_labels Kubernetes labels converted to Prometheus labels.
+# TYPE kube_deployment_labels gauge
+kube_deployment_labels{deployment="kubernetes-dashboard",label_k8s_app="kubernetes-dashboard",namespace="kube-system"} 1
+kube_deployment_labels{deployment="observability-manager",label_app="observability-manager",namespace="pks-system"} 1
+kube_deployment_labels{deployment="telemetry-agent",label_app="telemetry-agent",namespace="pks-system"} 1
+kube_deployment_labels{deployment="coredns",label_k8s_app="kube-dns",label_kubernetes_io_name="CoreDNS",namespace="kube-system"} 1
+kube_deployment_labels{deployment="event-controller",label_logs="true",label_safeToDelete="true",namespace="pks-system"} 1
+kube_deployment_labels{deployment="kube-state-metrics",label_grafanak8sapp="true",label_k8s_app="kube-state-metrics",namespace="kube-system"} 1
+kube_deployment_labels{deployment="metrics-server",label_k8s_app="metrics-server",label_version="v0.3.1",namespace="kube-system"} 1
+kube_deployment_labels{deployment="metric-controller",label_app="metric-controller",label_metrics="true",label_safeToDelete="true",namespace="pks-system"} 1
+kube_deployment_labels{deployment="sink-controller",label_app="sink-controller",label_logs="true",label_safeToDelete="true",namespace="pks-system"} 1
+kube_deployment_labels{deployment="validator",label_app="validator",label_logs="true",label_metrics="true",label_safeToDelete="true",namespace="pks-system"} 1
+# HELP kube_deployment_metadata_generation Sequence number representing a specific generation of the desired state.
+# TYPE kube_deployment_metadata_generation gauge
+kube_deployment_metadata_generation{deployment="coredns",namespace="kube-system"} 1
+kube_deployment_metadata_generation{deployment="event-controller",namespace="pks-system"} 1
+kube_deployment_metadata_generation{deployment="kube-state-metrics",namespace="kube-system"} 1
+kube_deployment_metadata_generation{deployment="kubernetes-dashboard",namespace="kube-system"} 1
+kube_deployment_metadata_generation{deployment="metric-controller",namespace="pks-system"} 1
+kube_deployment_metadata_generation{deployment="metrics-server",namespace="kube-system"} 1
+kube_deployment_metadata_generation{deployment="observability-manager",namespace="pks-system"} 1
+kube_deployment_metadata_generation{deployment="sink-controller",namespace="pks-system"} 1
+kube_deployment_metadata_generation{deployment="telemetry-agent",namespace="pks-system"} 1
+kube_deployment_metadata_generation{deployment="validator",namespace="pks-system"} 1
+# HELP kube_deployment_spec_paused Whether the deployment is paused and will not be processed by the deployment controller.
+# TYPE kube_deployment_spec_paused gauge
+kube_deployment_spec_paused{deployment="coredns",namespace="kube-system"} 0
+kube_deployment_spec_paused{deployment="event-controller",namespace="pks-system"} 0
+kube_deployment_spec_paused{deployment="kube-state-metrics",namespace="kube-system"} 0
+kube_deployment_spec_paused{deployment="kubernetes-dashboard",namespace="kube-system"} 0
+kube_deployment_spec_paused{deployment="metric-controller",namespace="pks-system"} 0
+kube_deployment_spec_paused{deployment="metrics-server",namespace="kube-system"} 0
+kube_deployment_spec_paused{deployment="observability-manager",namespace="pks-system"} 0
+kube_deployment_spec_paused{deployment="sink-controller",namespace="pks-system"} 0
+kube_deployment_spec_paused{deployment="telemetry-agent",namespace="pks-system"} 0
+kube_deployment_spec_paused{deployment="validator",namespace="pks-system"} 0
+# HELP kube_deployment_spec_replicas Number of desired pods for a deployment.
+# TYPE kube_deployment_spec_replicas gauge
+kube_deployment_spec_replicas{deployment="coredns",namespace="kube-system"} 3
+kube_deployment_spec_replicas{deployment="event-controller",namespace="pks-system"} 1
+kube_deployment_spec_replicas{deployment="kube-state-metrics",namespace="kube-system"} 1
+kube_deployment_spec_replicas{deployment="kubernetes-dashboard",namespace="kube-system"} 1
+kube_deployment_spec_replicas{deployment="metric-controller",namespace="pks-system"} 1
+kube_deployment_spec_replicas{deployment="metrics-server",namespace="kube-system"} 1
+kube_deployment_spec_replicas{deployment="observability-manager",namespace="pks-system"} 1
+kube_deployment_spec_replicas{deployment="sink-controller",namespace="pks-system"} 1
+kube_deployment_spec_replicas{deployment="telemetry-agent",namespace="pks-system"} 1
+kube_deployment_spec_replicas{deployment="validator",namespace="pks-system"} 1
+# HELP kube_deployment_spec_strategy_rollingupdate_max_unavailable Maximum number of unavailable replicas during a rolling update of a deployment.
+# TYPE kube_deployment_spec_strategy_rollingupdate_max_unavailable gauge
+kube_deployment_spec_strategy_rollingupdate_max_unavailable{deployment="coredns",namespace="kube-system"} 1
+kube_deployment_spec_strategy_rollingupdate_max_unavailable{deployment="event-controller",namespace="pks-system"} 1
+kube_deployment_spec_strategy_rollingupdate_max_unavailable{deployment="kube-state-metrics",namespace="kube-system"} 1
+kube_deployment_spec_strategy_rollingupdate_max_unavailable{deployment="kubernetes-dashboard",namespace="kube-system"} 1
+kube_deployment_spec_strategy_rollingupdate_max_unavailable{deployment="metric-controller",namespace="pks-system"} 1
+kube_deployment_spec_strategy_rollingupdate_max_unavailable{deployment="metrics-server",namespace="kube-system"} 1
+kube_deployment_spec_strategy_rollingupdate_max_unavailable{deployment="observability-manager",namespace="pks-system"} 1
+kube_deployment_spec_strategy_rollingupdate_max_unavailable{deployment="sink-controller",namespace="pks-system"} 1
+kube_deployment_spec_strategy_rollingupdate_max_unavailable{deployment="telemetry-agent",namespace="pks-system"} 1
+kube_deployment_spec_strategy_rollingupdate_max_unavailable{deployment="validator",namespace="pks-system"} 1
+# HELP kube_deployment_status_observed_generation The generation observed by the deployment controller.
+# TYPE kube_deployment_status_observed_generation gauge
+kube_deployment_status_observed_generation{deployment="coredns",namespace="kube-system"} 1
+kube_deployment_status_observed_generation{deployment="event-controller",namespace="pks-system"} 1
+kube_deployment_status_observed_generation{deployment="kube-state-metrics",namespace="kube-system"} 1
+kube_deployment_status_observed_generation{deployment="kubernetes-dashboard",namespace="kube-system"} 1
+kube_deployment_status_observed_generation{deployment="metric-controller",namespace="pks-system"} 1
+kube_deployment_status_observed_generation{deployment="metrics-server",namespace="kube-system"} 1
+kube_deployment_status_observed_generation{deployment="observability-manager",namespace="pks-system"} 1
+kube_deployment_status_observed_generation{deployment="sink-controller",namespace="pks-system"} 1
+kube_deployment_status_observed_generation{deployment="telemetry-agent",namespace="pks-system"} 1
+kube_deployment_status_observed_generation{deployment="validator",namespace="pks-system"} 1
+# HELP kube_deployment_status_replicas The number of replicas per deployment.
+# TYPE kube_deployment_status_replicas gauge
+kube_deployment_status_replicas{deployment="coredns",namespace="kube-system"} 3
+kube_deployment_status_replicas{deployment="event-controller",namespace="pks-system"} 1
+kube_deployment_status_replicas{deployment="kube-state-metrics",namespace="kube-system"} 1
+kube_deployment_status_replicas{deployment="kubernetes-dashboard",namespace="kube-system"} 1
+kube_deployment_status_replicas{deployment="metric-controller",namespace="pks-system"} 1
+kube_deployment_status_replicas{deployment="metrics-server",namespace="kube-system"} 1
+kube_deployment_status_replicas{deployment="observability-manager",namespace="pks-system"} 1
+kube_deployment_status_replicas{deployment="sink-controller",namespace="pks-system"} 1
+kube_deployment_status_replicas{deployment="telemetry-agent",namespace="pks-system"} 1
+kube_deployment_status_replicas{deployment="validator",namespace="pks-system"} 1
+# HELP kube_deployment_status_replicas_available The number of available replicas per deployment.
+# TYPE kube_deployment_status_replicas_available gauge
+kube_deployment_status_replicas_available{deployment="coredns",namespace="kube-system"} 3
+kube_deployment_status_replicas_available{deployment="event-controller",namespace="pks-system"} 1
+kube_deployment_status_replicas_available{deployment="kube-state-metrics",namespace="kube-system"} 1
+kube_deployment_status_replicas_available{deployment="kubernetes-dashboard",namespace="kube-system"} 1
+kube_deployment_status_replicas_available{deployment="metric-controller",namespace="pks-system"} 1
+kube_deployment_status_replicas_available{deployment="metrics-server",namespace="kube-system"} 1
+kube_deployment_status_replicas_available{deployment="observability-manager",namespace="pks-system"} 1
+kube_deployment_status_replicas_available{deployment="sink-controller",namespace="pks-system"} 1
+kube_deployment_status_replicas_available{deployment="telemetry-agent",namespace="pks-system"} 1
+kube_deployment_status_replicas_available{deployment="validator",namespace="pks-system"} 1
+# HELP kube_deployment_status_replicas_unavailable The number of unavailable replicas per deployment.
+# TYPE kube_deployment_status_replicas_unavailable gauge
+kube_deployment_status_replicas_unavailable{deployment="coredns",namespace="kube-system"} 0
+kube_deployment_status_replicas_unavailable{deployment="event-controller",namespace="pks-system"} 0
+kube_deployment_status_replicas_unavailable{deployment="kube-state-metrics",namespace="kube-system"} 0
+kube_deployment_status_replicas_unavailable{deployment="kubernetes-dashboard",namespace="kube-system"} 0
+kube_deployment_status_replicas_unavailable{deployment="metric-controller",namespace="pks-system"} 0
+kube_deployment_status_replicas_unavailable{deployment="metrics-server",namespace="kube-system"} 0
+kube_deployment_status_replicas_unavailable{deployment="observability-manager",namespace="pks-system"} 0
+kube_deployment_status_replicas_unavailable{deployment="sink-controller",namespace="pks-system"} 0
+kube_deployment_status_replicas_unavailable{deployment="telemetry-agent",namespace="pks-system"} 0
+kube_deployment_status_replicas_unavailable{deployment="validator",namespace="pks-system"} 0
+# HELP kube_deployment_status_replicas_updated The number of updated replicas per deployment.
+# TYPE kube_deployment_status_replicas_updated gauge
+kube_deployment_status_replicas_updated{deployment="coredns",namespace="kube-system"} 3
+kube_deployment_status_replicas_updated{deployment="event-controller",namespace="pks-system"} 1
+kube_deployment_status_replicas_updated{deployment="kube-state-metrics",namespace="kube-system"} 1
+kube_deployment_status_replicas_updated{deployment="kubernetes-dashboard",namespace="kube-system"} 1
+kube_deployment_status_replicas_updated{deployment="metric-controller",namespace="pks-system"} 1
+kube_deployment_status_replicas_updated{deployment="metrics-server",namespace="kube-system"} 1
+kube_deployment_status_replicas_updated{deployment="observability-manager",namespace="pks-system"} 1
+kube_deployment_status_replicas_updated{deployment="sink-controller",namespace="pks-system"} 1
+kube_deployment_status_replicas_updated{deployment="telemetry-agent",namespace="pks-system"} 1
+kube_deployment_status_replicas_updated{deployment="validator",namespace="pks-system"} 1
+# HELP kube_job_complete The job has completed its execution.
+# TYPE kube_job_complete gauge
+kube_job_complete{condition="false",job="cert-generator-v0.19",namespace="pks-system"} 0
+kube_job_complete{condition="true",job="cert-generator-v0.19",namespace="pks-system"} 1
+kube_job_complete{condition="unknown",job="cert-generator-v0.19",namespace="pks-system"} 0
+# HELP kube_job_created Unix creation timestamp
+# TYPE kube_job_created gauge
+kube_job_created{job="cert-generator-v0.19",namespace="pks-system"} 1.563454142e+09
+# HELP kube_job_info Information about job.
+# TYPE kube_job_info gauge
+kube_job_info{job="cert-generator-v0.19",namespace="pks-system"} 1
+# HELP kube_job_spec_completions The desired number of successfully finished pods the job should be run with.
+# TYPE kube_job_spec_completions gauge
+kube_job_spec_completions{job="cert-generator-v0.19",namespace="pks-system"} 1
+# HELP kube_job_spec_parallelism The maximum desired number of pods the job should run at any given time.
+# TYPE kube_job_spec_parallelism gauge
+kube_job_spec_parallelism{job="cert-generator-v0.19",namespace="pks-system"} 1
+# HELP kube_job_status_active The number of actively running pods.
+# TYPE kube_job_status_active gauge
+kube_job_status_active{job="cert-generator-v0.19",namespace="pks-system"} 0
+# HELP kube_job_status_completion_time CompletionTime represents time when the job was completed.
+# TYPE kube_job_status_completion_time counter
+kube_job_status_completion_time{job="cert-generator-v0.19",namespace="pks-system"} 1.563454172e+09
+# HELP kube_job_status_failed The number of pods which reached Phase Failed.
+# TYPE kube_job_status_failed gauge
+kube_job_status_failed{job="cert-generator-v0.19",namespace="pks-system"} 0
+# HELP kube_job_status_start_time StartTime represents time when the job was acknowledged by the Job Manager.
+# TYPE kube_job_status_start_time counter
+kube_job_status_start_time{job="cert-generator-v0.19",namespace="pks-system"} 1.563454142e+09
+# HELP kube_job_status_succeeded The number of pods which reached Phase Succeeded.
+# TYPE kube_job_status_succeeded gauge
+kube_job_status_succeeded{job="cert-generator-v0.19",namespace="pks-system"} 1
+# HELP kube_namespace_created Unix creation timestamp
+# TYPE kube_namespace_created gauge
+kube_namespace_created{namespace="default"} 1.56345336e+09
+kube_namespace_created{namespace="kube-public"} 1.56345336e+09
+kube_namespace_created{namespace="kube-system"} 1.56345336e+09
+kube_namespace_created{namespace="pks-system"} 1.563454138e+09
+# HELP kube_namespace_labels Kubernetes labels converted to Prometheus labels.
+# TYPE kube_namespace_labels gauge
+kube_namespace_labels{namespace="default"} 1
+kube_namespace_labels{namespace="kube-public"} 1
+kube_namespace_labels{namespace="kube-system"} 1
+kube_namespace_labels{namespace="pks-system"} 1
+# HELP kube_namespace_status_phase kubernetes namespace status phase.
+# TYPE kube_namespace_status_phase gauge
+kube_namespace_status_phase{namespace="default",phase="Active"} 1
+kube_namespace_status_phase{namespace="default",phase="Terminating"} 0
+kube_namespace_status_phase{namespace="kube-public",phase="Active"} 1
+kube_namespace_status_phase{namespace="kube-public",phase="Terminating"} 0
+kube_namespace_status_phase{namespace="kube-system",phase="Active"} 1
+kube_namespace_status_phase{namespace="kube-system",phase="Terminating"} 0
+kube_namespace_status_phase{namespace="pks-system",phase="Active"} 1
+kube_namespace_status_phase{namespace="pks-system",phase="Terminating"} 0
+# HELP kube_node_created Unix creation timestamp
+# TYPE kube_node_created gauge
+kube_node_created{node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8"} 1.563453543e+09
+kube_node_created{node="cd09acfe-de87-41e2-beab-b2d7bc4987ac"} 1.563453871e+09
+# HELP kube_node_info Information about a cluster node.
+# TYPE kube_node_info gauge
+kube_node_info{container_runtime_version="docker://18.6.3",kernel_version="4.15.0-50-generic",kubelet_version="v1.13.5",kubeproxy_version="v1.13.5",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",os_image="Ubuntu 16.04.6 LTS",provider_id="vsphere://4216b1e8-60b2-f656-1c1f-c4604c6455ba"} 1
+kube_node_info{container_runtime_version="docker://18.6.3",kernel_version="4.15.0-50-generic",kubelet_version="v1.13.5",kubeproxy_version="v1.13.5",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",os_image="Ubuntu 16.04.6 LTS",provider_id="vsphere://42160e32-af12-a947-11fb-912af8eac080"} 1
+# HELP kube_node_labels Kubernetes labels converted to Prometheus labels.
+# TYPE kube_node_labels gauge
+kube_node_labels{label_beta_kubernetes_io_arch="amd64",label_beta_kubernetes_io_os="linux",label_bosh_id="8487d9c6-6629-4702-8e09-0da5f0d8bef4",label_bosh_zone="az2",label_failure_domain_beta_kubernetes_io_zone="az2",label_kubernetes_io_hostname="10.10.14.43",label_pks_system_cluster_name="mkim",label_pks_system_cluster_uuid="service-instance_5c7c9cb5-4308-45e6-8367-01f745715983",label_spec_ip="10.10.14.43",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac"} 1
+kube_node_labels{label_beta_kubernetes_io_arch="amd64",label_beta_kubernetes_io_os="linux",label_bosh_id="b69db865-f747-48a6-bc12-e9ef10969b26",label_bosh_zone="az2",label_failure_domain_beta_kubernetes_io_zone="az2",label_kubernetes_io_hostname="10.10.14.42",label_pks_system_cluster_name="mkim",label_pks_system_cluster_uuid="service-instance_5c7c9cb5-4308-45e6-8367-01f745715983",label_spec_ip="10.10.14.42",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8"} 1
+# HELP kube_node_spec_unschedulable Whether a node can schedule new pods.
+# TYPE kube_node_spec_unschedulable gauge
+kube_node_spec_unschedulable{node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8"} 0
+kube_node_spec_unschedulable{node="cd09acfe-de87-41e2-beab-b2d7bc4987ac"} 0
+# HELP kube_node_status_allocatable_cpu_cores The CPU resources of a node that are available for scheduling.
+# TYPE kube_node_status_allocatable_cpu_cores gauge
+kube_node_status_allocatable_cpu_cores{node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8"} 2
+kube_node_status_allocatable_cpu_cores{node="cd09acfe-de87-41e2-beab-b2d7bc4987ac"} 2
+# HELP kube_node_status_allocatable_memory_bytes The memory resources of a node that are available for scheduling.
+# TYPE kube_node_status_allocatable_memory_bytes gauge
+kube_node_status_allocatable_memory_bytes{node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8"} 4.032126976e+09
+kube_node_status_allocatable_memory_bytes{node="cd09acfe-de87-41e2-beab-b2d7bc4987ac"} 4.032126976e+09
+# HELP kube_node_status_allocatable_pods The pod resources of a node that are available for scheduling.
+# TYPE kube_node_status_allocatable_pods gauge
+kube_node_status_allocatable_pods{node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8"} 110
+kube_node_status_allocatable_pods{node="cd09acfe-de87-41e2-beab-b2d7bc4987ac"} 110
+# HELP kube_node_status_capacity_cpu_cores The total CPU resources of the node.
+# TYPE kube_node_status_capacity_cpu_cores gauge
+kube_node_status_capacity_cpu_cores{node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8"} 2
+kube_node_status_capacity_cpu_cores{node="cd09acfe-de87-41e2-beab-b2d7bc4987ac"} 2
+# HELP kube_node_status_capacity_memory_bytes The total memory resources of the node.
+# TYPE kube_node_status_capacity_memory_bytes gauge
+kube_node_status_capacity_memory_bytes{node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8"} 4.136984576e+09
+kube_node_status_capacity_memory_bytes{node="cd09acfe-de87-41e2-beab-b2d7bc4987ac"} 4.136984576e+09
+# HELP kube_node_status_capacity_pods The total pod resources of the node.
+# TYPE kube_node_status_capacity_pods gauge
+kube_node_status_capacity_pods{node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8"} 110
+kube_node_status_capacity_pods{node="cd09acfe-de87-41e2-beab-b2d7bc4987ac"} 110
+# HELP kube_node_status_condition The condition of a cluster node.
+# TYPE kube_node_status_condition gauge
+kube_node_status_condition{condition="DiskPressure",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="false"} 1
+kube_node_status_condition{condition="DiskPressure",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="true"} 0
+kube_node_status_condition{condition="DiskPressure",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="unknown"} 0
+kube_node_status_condition{condition="DiskPressure",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="false"} 1
+kube_node_status_condition{condition="DiskPressure",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="true"} 0
+kube_node_status_condition{condition="DiskPressure",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="unknown"} 0
+kube_node_status_condition{condition="MemoryPressure",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="false"} 1
+kube_node_status_condition{condition="MemoryPressure",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="true"} 0
+kube_node_status_condition{condition="MemoryPressure",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="unknown"} 0
+kube_node_status_condition{condition="MemoryPressure",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="false"} 1
+kube_node_status_condition{condition="MemoryPressure",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="true"} 0
+kube_node_status_condition{condition="MemoryPressure",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="unknown"} 0
+kube_node_status_condition{condition="PIDPressure",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="false"} 1
+kube_node_status_condition{condition="PIDPressure",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="true"} 0
+kube_node_status_condition{condition="PIDPressure",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="unknown"} 0
+kube_node_status_condition{condition="PIDPressure",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="false"} 1
+kube_node_status_condition{condition="PIDPressure",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="true"} 0
+kube_node_status_condition{condition="PIDPressure",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="unknown"} 0
+kube_node_status_condition{condition="Ready",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="false"} 0
+kube_node_status_condition{condition="Ready",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="true"} 1
+kube_node_status_condition{condition="Ready",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",status="unknown"} 0
+kube_node_status_condition{condition="Ready",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="false"} 0
+kube_node_status_condition{condition="Ready",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="true"} 1
+kube_node_status_condition{condition="Ready",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",status="unknown"} 0
+# HELP kube_pod_container_info Information about a container in a pod.
+# TYPE kube_pod_container_info gauge
+kube_pod_container_info{container="cert-generator",container_id="docker://b6620fe6958ed65536c66e36174bd5874d0a0e826ec17727e457ff5d995e0607",image="oratos/cert-generator:v0.19",image_id="docker://sha256:716b898e73200d67eb51c222f537f58f5697e31e19c650e361a3770980efd8c4",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 1
+kube_pod_container_info{container="coredns",container_id="docker://339a114db1803062dbb620dd1e1721b1e32b27a1d05d6448bbd5c65ee1d0162b",image="coredns/coredns:1.3.1",image_id="docker://sha256:eb516548c180f8a6e0235034ccee2428027896af16a509786da13022fe95fe8c",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 1
+kube_pod_container_info{container="coredns",container_id="docker://9934385fd2209061941d706be8cfa76500de73b52782e56866b3c6b2696e9c78",image="coredns/coredns:1.3.1",image_id="docker://sha256:eb516548c180f8a6e0235034ccee2428027896af16a509786da13022fe95fe8c",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 1
+kube_pod_container_info{container="coredns",container_id="docker://b72a63db796e52f636cf4386e90e7a56979d30d0dc553fc67e696e5838f25657",image="coredns/coredns:1.3.1",image_id="docker://sha256:eb516548c180f8a6e0235034ccee2428027896af16a509786da13022fe95fe8c",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 1
+kube_pod_container_info{container="event-controller",container_id="docker://c0287f571f303e101af048eb3f1259ce7cc053e4ffb48359e27b5ba115ff270d",image="oratos/event-controller:v0.19",image_id="docker://sha256:a805c79f71a9430ba9d949f1983a8220c1f45817043f781f71aebacfeb5154d7",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 1
+kube_pod_container_info{container="fluent-bit",container_id="docker://283b64166357aa0d126c1f1fa87e2a294fded51f0cf41456e0fdcb1caaa6f430",image="oratos/fluent-bit-out-syslog:v0.15",image_id="docker://sha256:ee8a145af2fd30593cb30b2f6fb9848fdd19982ff627740baae5d491d99f0667",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_container_info{container="fluent-bit",container_id="docker://a01727f5f09c5a3e3415315f31c91566d3682a0f88ce4cd6cd52acf927bf94f8",image="oratos/fluent-bit-out-syslog:v0.15",image_id="docker://sha256:ee8a145af2fd30593cb30b2f6fb9848fdd19982ff627740baae5d491d99f0667",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+kube_pod_container_info{container="fluent-bit",container_id="docker://eac2f150b68632dba24209eeb52e35f0c75b1f3fb19486616e01ec7b01e18316",image="pkstelemetrybot/telemetry-agent:latest",image_id="docker://sha256:31ede49bff003832d83a34c374c10542a0998cdf8324fdc6dfe7f2f4bdb0e3f5",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 1
+kube_pod_container_info{container="ghostunnel",container_id="docker://0da63bb17afae32d8e573adf11ffe5b8d7e14d7742c733d07f55c3ffee02229e",image="oratos/ghostunnel:v0.19",image_id="docker://sha256:28211ff409ec4a8d94c6137368852a3da19be2266392591b3ed2b4916312cc79",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+kube_pod_container_info{container="ghostunnel",container_id="docker://3e07a4911de53131a16678f37cd4fdfa51017bc3ed893f3430aa76d624b81280",image="oratos/ghostunnel:v0.19",image_id="docker://sha256:28211ff409ec4a8d94c6137368852a3da19be2266392591b3ed2b4916312cc79",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_container_info{container="ghostunnel",container_id="docker://c57520a418c71301c438f6ba1bbe2f4176541fd9d2178e2f7aaed503c9a6c6ff",image="oratos/ghostunnel:v0.19",image_id="docker://sha256:28211ff409ec4a8d94c6137368852a3da19be2266392591b3ed2b4916312cc79",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 1
+kube_pod_container_info{container="kube-state-metrics",container_id="docker://8ceeb1644415ea11045fd1c3cadb546320abba339802ba242dcbf773885ab06e",image="quay.io/coreos/kube-state-metrics:v1.1.0",image_id="docker-pullable://quay.io/coreos/kube-state-metrics@sha256:52a2c47355c873709bb4e37e990d417e9188c2a778a0c38ed4c09776ddc54efb",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 1
+kube_pod_container_info{container="kubernetes-dashboard",container_id="docker://340777f5cbb018fc31d63ea78061681508234de1436b48c79ab067dc47acb8d4",image="k8s.gcr.io/kubernetes-dashboard-amd64:v1.10.1",image_id="docker://sha256:f9aed6605b814b69e92dece6a50ed1e4e730144eb1cc971389dde9cb3820d124",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 1
+kube_pod_container_info{container="metric-controller",container_id="docker://3d2ed4be5e37e7d6a03b837c8de5b7ed0e8501e9ca0fc447b9304cb8358b0fd1",image="oratos/metric-controller:v0.19",image_id="docker://sha256:23dc626b674472a1628d246be48e9028029ba277968e6bc5332ca8f89e22ad23",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 1
+kube_pod_container_info{container="metrics-server",container_id="docker://07853436e626ca162a7bf7ad19df4f65c3c4b1044624bbc729d81e2e2f574075",image="k8s.gcr.io/metrics-server-amd64:v0.3.1",image_id="docker://sha256:61a0c90da56e739d3631a709c73b251451fce8fda6a8431e0bb7c957703a38bc",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 1
+kube_pod_container_info{container="node-exporter",container_id="docker://0b989ae9eb100aee38fd31106972b1295f2edf49f3f76d49b6f175dfe0e74a46",image="quay.io/prometheus/node-exporter:v0.15.0",image_id="docker-pullable://quay.io/prometheus/node-exporter@sha256:0b1053a5416a3346aff000c86b268353728804bac7ffa1071ea3da9dde02af1d",namespace="kube-system",pod="node-exporter-h9ztk"} 1
+kube_pod_container_info{container="node-exporter",container_id="docker://c0fe4eb0baee61c2bbd920b1ab75c946657ce1432cbb19cff865d562e0dc1019",image="quay.io/prometheus/node-exporter:v0.15.0",image_id="docker-pullable://quay.io/prometheus/node-exporter@sha256:0b1053a5416a3346aff000c86b268353728804bac7ffa1071ea3da9dde02af1d",namespace="kube-system",pod="node-exporter-vt5p5"} 1
+kube_pod_container_info{container="observability-manager",container_id="docker://3f96eac7a71e9704232f7f739f4d1552de24a3d2239dcabf7b71d7496da77c38",image="oratos/observability-manager:v1.4.12",image_id="docker://sha256:4c86d8c9c0282ffad95e0106722ef9b1f4178399261a107f0baa6fd2c3c6f853",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 1
+kube_pod_container_info{container="sink-controller",container_id="docker://b384296cefebad85797377c7aa9c218f2888a469cd003d8ad392ed64a4a176da",image="oratos/sink-controller:v0.19",image_id="docker://sha256:7bfe553d7619de326d57a0620637dc74a411bc3a2e2cbf3cd28bf330bcfa2722",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 1
+kube_pod_container_info{container="state-updater",container_id="docker://5b8034265447806bf09563eac0d6b8a73a236a8c3eda8831ac67c24a25e861eb",image="oratos/sink-state-updater:v0.19",image_id="docker://sha256:b03ae69b4251e33339e9648846e04282649572e8ac74cc5e128d202352a45486",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_container_info{container="state-updater",container_id="docker://c4a5f790371f3b06ff91aa25af9f9c9a5ca2cc01b5ed1f11f24eca72cbfe2555",image="oratos/sink-state-updater:v0.19",image_id="docker://sha256:b03ae69b4251e33339e9648846e04282649572e8ac74cc5e128d202352a45486",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+kube_pod_container_info{container="telegraf",container_id="docker://9642c825a8f27ab1b9dd1fa2818a7ad1b2a1f75b0af3d05dab93ced19261be8a",image="oratos/telegraf:v0.19",image_id="docker://sha256:fb6bbf22f451d14233456af23e4a8f7ab515339fb9ee073bc57237c26ecf1d7f",namespace="pks-system",pod="telegraf-hwf6n"} 1
+kube_pod_container_info{container="telegraf",container_id="docker://d9d112802c198d78913f22e71628b35d6000471b7c6302be5aff939cbd3b4271",image="oratos/telegraf:v0.19",image_id="docker://sha256:fb6bbf22f451d14233456af23e4a8f7ab515339fb9ee073bc57237c26ecf1d7f",namespace="pks-system",pod="telegraf-f6znx"} 1
+kube_pod_container_info{container="validator",container_id="docker://83f35576e9da46b0ac0567c0eaa255f33b89ffb770840af76cff2884d29e3fe8",image="oratos/validator:v0.19",image_id="docker://sha256:aa6cb09854ec7c17a7d210af1ac0221a1d095fdae85d6148c20da3765994201a",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 1
+kube_pod_container_info{container="vrops-cadvisor",container_id="docker://06e0524551575036e5c8fe4eada96f1f1765f52ea034b507c7516814698f65c3",image="google/cadvisor:v0.31.0",image_id="docker://sha256:a38f1319a42019efcad7c61e69d57fba5aa50b2c8300eb26158db443030eebca",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 1
+kube_pod_container_info{container="vrops-cadvisor",container_id="docker://0ac8eaa0547efb975182dcf841f523cd8c7e2ab6768dcbe7fe39ccb231e32add",image="google/cadvisor:v0.31.0",image_id="docker://sha256:a38f1319a42019efcad7c61e69d57fba5aa50b2c8300eb26158db443030eebca",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 1
+# HELP kube_pod_container_resource_limits_cpu_cores The limit on cpu cores to be used by a container.
+# TYPE kube_pod_container_resource_limits_cpu_cores gauge
+kube_pod_container_resource_limits_cpu_cores{container="kubernetes-dashboard",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0.1
+# HELP kube_pod_container_resource_limits_memory_bytes The limit on memory to be used by a container in bytes.
+# TYPE kube_pod_container_resource_limits_memory_bytes gauge
+kube_pod_container_resource_limits_memory_bytes{container="coredns",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="coredns-54586579f6-k2qxh"} 1.7825792e+08
+kube_pod_container_resource_limits_memory_bytes{container="coredns",namespace="kube-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="coredns-54586579f6-4gdx7"} 1.7825792e+08
+kube_pod_container_resource_limits_memory_bytes{container="coredns",namespace="kube-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="coredns-54586579f6-qmpp9"} 1.7825792e+08
+kube_pod_container_resource_limits_memory_bytes{container="fluent-bit",namespace="pks-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="fluent-bit-28q24"} 1.048576e+08
+kube_pod_container_resource_limits_memory_bytes{container="fluent-bit",namespace="pks-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="fluent-bit-2wxpc"} 1.048576e+08
+kube_pod_container_resource_limits_memory_bytes{container="kubernetes-dashboard",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 3.145728e+08
+# HELP kube_pod_container_resource_requests_cpu_cores The number of requested cpu cores by a container.
+# TYPE kube_pod_container_resource_requests_cpu_cores gauge
+kube_pod_container_resource_requests_cpu_cores{container="coredns",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="coredns-54586579f6-k2qxh"} 0.1
+kube_pod_container_resource_requests_cpu_cores{container="coredns",namespace="kube-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="coredns-54586579f6-4gdx7"} 0.1
+kube_pod_container_resource_requests_cpu_cores{container="coredns",namespace="kube-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="coredns-54586579f6-qmpp9"} 0.1
+kube_pod_container_resource_requests_cpu_cores{container="kubernetes-dashboard",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0.05
+# HELP kube_pod_container_resource_requests_memory_bytes The number of requested memory bytes  by a container.
+# TYPE kube_pod_container_resource_requests_memory_bytes gauge
+kube_pod_container_resource_requests_memory_bytes{container="coredns",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="coredns-54586579f6-k2qxh"} 7.340032e+07
+kube_pod_container_resource_requests_memory_bytes{container="coredns",namespace="kube-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="coredns-54586579f6-4gdx7"} 7.340032e+07
+kube_pod_container_resource_requests_memory_bytes{container="coredns",namespace="kube-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="coredns-54586579f6-qmpp9"} 7.340032e+07
+kube_pod_container_resource_requests_memory_bytes{container="fluent-bit",namespace="pks-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="fluent-bit-28q24"} 1.048576e+08
+kube_pod_container_resource_requests_memory_bytes{container="fluent-bit",namespace="pks-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="fluent-bit-2wxpc"} 1.048576e+08
+kube_pod_container_resource_requests_memory_bytes{container="kubernetes-dashboard",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 1.048576e+08
+# HELP kube_pod_container_status_ready Describes whether the containers readiness check succeeded.
+# TYPE kube_pod_container_status_ready gauge
+kube_pod_container_status_ready{container="cert-generator",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_container_status_ready{container="coredns",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 1
+kube_pod_container_status_ready{container="coredns",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 1
+kube_pod_container_status_ready{container="coredns",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 1
+kube_pod_container_status_ready{container="event-controller",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 1
+kube_pod_container_status_ready{container="fluent-bit",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_container_status_ready{container="fluent-bit",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+kube_pod_container_status_ready{container="fluent-bit",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 1
+kube_pod_container_status_ready{container="ghostunnel",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 1
+kube_pod_container_status_ready{container="ghostunnel",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_container_status_ready{container="ghostunnel",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+kube_pod_container_status_ready{container="kube-state-metrics",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 1
+kube_pod_container_status_ready{container="kubernetes-dashboard",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 1
+kube_pod_container_status_ready{container="metric-controller",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 1
+kube_pod_container_status_ready{container="metrics-server",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 1
+kube_pod_container_status_ready{container="node-exporter",namespace="kube-system",pod="node-exporter-h9ztk"} 0
+kube_pod_container_status_ready{container="node-exporter",namespace="kube-system",pod="node-exporter-vt5p5"} 0
+kube_pod_container_status_ready{container="observability-manager",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 1
+kube_pod_container_status_ready{container="sink-controller",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 1
+kube_pod_container_status_ready{container="state-updater",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_container_status_ready{container="state-updater",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+kube_pod_container_status_ready{container="telegraf",namespace="pks-system",pod="telegraf-f6znx"} 1
+kube_pod_container_status_ready{container="telegraf",namespace="pks-system",pod="telegraf-hwf6n"} 1
+kube_pod_container_status_ready{container="validator",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 1
+kube_pod_container_status_ready{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 1
+kube_pod_container_status_ready{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 1
+# HELP kube_pod_container_status_restarts The number of container restarts per container.
+# TYPE kube_pod_container_status_restarts counter
+kube_pod_container_status_restarts{container="cert-generator",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_container_status_restarts{container="coredns",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 5
+kube_pod_container_status_restarts{container="coredns",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 4
+kube_pod_container_status_restarts{container="coredns",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 5
+kube_pod_container_status_restarts{container="event-controller",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 572
+kube_pod_container_status_restarts{container="fluent-bit",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_container_status_restarts{container="fluent-bit",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_container_status_restarts{container="fluent-bit",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 0
+kube_pod_container_status_restarts{container="ghostunnel",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_container_status_restarts{container="ghostunnel",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_container_status_restarts{container="ghostunnel",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_container_status_restarts{container="kube-state-metrics",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 0
+kube_pod_container_status_restarts{container="kubernetes-dashboard",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0
+kube_pod_container_status_restarts{container="metric-controller",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 5
+kube_pod_container_status_restarts{container="metrics-server",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 0
+kube_pod_container_status_restarts{container="node-exporter",namespace="kube-system",pod="node-exporter-h9ztk"} 28
+kube_pod_container_status_restarts{container="node-exporter",namespace="kube-system",pod="node-exporter-vt5p5"} 28
+kube_pod_container_status_restarts{container="observability-manager",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 0
+kube_pod_container_status_restarts{container="sink-controller",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 4
+kube_pod_container_status_restarts{container="state-updater",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_container_status_restarts{container="state-updater",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_container_status_restarts{container="telegraf",namespace="pks-system",pod="telegraf-f6znx"} 0
+kube_pod_container_status_restarts{container="telegraf",namespace="pks-system",pod="telegraf-hwf6n"} 0
+kube_pod_container_status_restarts{container="validator",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 0
+kube_pod_container_status_restarts{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 0
+kube_pod_container_status_restarts{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 0
+# HELP kube_pod_container_status_running Describes whether the container is currently in running state.
+# TYPE kube_pod_container_status_running gauge
+kube_pod_container_status_running{container="cert-generator",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_container_status_running{container="coredns",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 1
+kube_pod_container_status_running{container="coredns",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 1
+kube_pod_container_status_running{container="coredns",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 1
+kube_pod_container_status_running{container="event-controller",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 1
+kube_pod_container_status_running{container="fluent-bit",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_container_status_running{container="fluent-bit",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+kube_pod_container_status_running{container="fluent-bit",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 1
+kube_pod_container_status_running{container="ghostunnel",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 1
+kube_pod_container_status_running{container="ghostunnel",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_container_status_running{container="ghostunnel",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+kube_pod_container_status_running{container="kube-state-metrics",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 1
+kube_pod_container_status_running{container="kubernetes-dashboard",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 1
+kube_pod_container_status_running{container="metric-controller",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 1
+kube_pod_container_status_running{container="metrics-server",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 1
+kube_pod_container_status_running{container="node-exporter",namespace="kube-system",pod="node-exporter-h9ztk"} 0
+kube_pod_container_status_running{container="node-exporter",namespace="kube-system",pod="node-exporter-vt5p5"} 0
+kube_pod_container_status_running{container="observability-manager",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 1
+kube_pod_container_status_running{container="sink-controller",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 1
+kube_pod_container_status_running{container="state-updater",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_container_status_running{container="state-updater",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+kube_pod_container_status_running{container="telegraf",namespace="pks-system",pod="telegraf-f6znx"} 1
+kube_pod_container_status_running{container="telegraf",namespace="pks-system",pod="telegraf-hwf6n"} 1
+kube_pod_container_status_running{container="validator",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 1
+kube_pod_container_status_running{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 1
+kube_pod_container_status_running{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 1
+# HELP kube_pod_container_status_terminated Describes whether the container is currently in terminated state.
+# TYPE kube_pod_container_status_terminated gauge
+kube_pod_container_status_terminated{container="cert-generator",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 1
+kube_pod_container_status_terminated{container="coredns",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 0
+kube_pod_container_status_terminated{container="coredns",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 0
+kube_pod_container_status_terminated{container="coredns",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 0
+kube_pod_container_status_terminated{container="event-controller",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_container_status_terminated{container="fluent-bit",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_container_status_terminated{container="fluent-bit",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_container_status_terminated{container="fluent-bit",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 0
+kube_pod_container_status_terminated{container="ghostunnel",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_container_status_terminated{container="ghostunnel",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_container_status_terminated{container="ghostunnel",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_container_status_terminated{container="kube-state-metrics",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 0
+kube_pod_container_status_terminated{container="kubernetes-dashboard",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0
+kube_pod_container_status_terminated{container="metric-controller",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 0
+kube_pod_container_status_terminated{container="metrics-server",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 0
+kube_pod_container_status_terminated{container="node-exporter",namespace="kube-system",pod="node-exporter-h9ztk"} 0
+kube_pod_container_status_terminated{container="node-exporter",namespace="kube-system",pod="node-exporter-vt5p5"} 0
+kube_pod_container_status_terminated{container="observability-manager",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 0
+kube_pod_container_status_terminated{container="sink-controller",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 0
+kube_pod_container_status_terminated{container="state-updater",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_container_status_terminated{container="state-updater",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_container_status_terminated{container="telegraf",namespace="pks-system",pod="telegraf-f6znx"} 0
+kube_pod_container_status_terminated{container="telegraf",namespace="pks-system",pod="telegraf-hwf6n"} 0
+kube_pod_container_status_terminated{container="validator",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 0
+kube_pod_container_status_terminated{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 0
+kube_pod_container_status_terminated{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 0
+# HELP kube_pod_container_status_waiting Describes whether the container is currently in waiting state.
+# TYPE kube_pod_container_status_waiting gauge
+kube_pod_container_status_waiting{container="cert-generator",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_container_status_waiting{container="coredns",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 0
+kube_pod_container_status_waiting{container="coredns",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 0
+kube_pod_container_status_waiting{container="coredns",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 0
+kube_pod_container_status_waiting{container="event-controller",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_container_status_waiting{container="fluent-bit",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_container_status_waiting{container="fluent-bit",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_container_status_waiting{container="fluent-bit",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 0
+kube_pod_container_status_waiting{container="ghostunnel",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_container_status_waiting{container="ghostunnel",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_container_status_waiting{container="ghostunnel",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_container_status_waiting{container="kube-state-metrics",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 0
+kube_pod_container_status_waiting{container="kubernetes-dashboard",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0
+kube_pod_container_status_waiting{container="metric-controller",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 0
+kube_pod_container_status_waiting{container="metrics-server",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 0
+kube_pod_container_status_waiting{container="node-exporter",namespace="kube-system",pod="node-exporter-h9ztk"} 1
+kube_pod_container_status_waiting{container="node-exporter",namespace="kube-system",pod="node-exporter-vt5p5"} 1
+kube_pod_container_status_waiting{container="observability-manager",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 0
+kube_pod_container_status_waiting{container="sink-controller",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 0
+kube_pod_container_status_waiting{container="state-updater",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_container_status_waiting{container="state-updater",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_container_status_waiting{container="telegraf",namespace="pks-system",pod="telegraf-f6znx"} 0
+kube_pod_container_status_waiting{container="telegraf",namespace="pks-system",pod="telegraf-hwf6n"} 0
+kube_pod_container_status_waiting{container="validator",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 0
+kube_pod_container_status_waiting{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 0
+kube_pod_container_status_waiting{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 0
+# HELP kube_pod_container_status_waiting_reason Describes the reason the container is currently in waiting state.
+# TYPE kube_pod_container_status_waiting_reason gauge
+kube_pod_container_status_waiting_reason{container="cert-generator",namespace="pks-system",pod="cert-generator-v0.19-2wl5k",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="cert-generator",namespace="pks-system",pod="cert-generator-v0.19-2wl5k",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="coredns",namespace="kube-system",pod="coredns-54586579f6-4gdx7",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="coredns",namespace="kube-system",pod="coredns-54586579f6-4gdx7",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="coredns",namespace="kube-system",pod="coredns-54586579f6-k2qxh",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="coredns",namespace="kube-system",pod="coredns-54586579f6-k2qxh",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="coredns",namespace="kube-system",pod="coredns-54586579f6-qmpp9",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="coredns",namespace="kube-system",pod="coredns-54586579f6-qmpp9",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="event-controller",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="event-controller",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="fluent-bit",namespace="pks-system",pod="fluent-bit-28q24",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="fluent-bit",namespace="pks-system",pod="fluent-bit-28q24",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="fluent-bit",namespace="pks-system",pod="fluent-bit-2wxpc",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="fluent-bit",namespace="pks-system",pod="fluent-bit-2wxpc",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="fluent-bit",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="fluent-bit",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="ghostunnel",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="ghostunnel",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="ghostunnel",namespace="pks-system",pod="fluent-bit-28q24",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="ghostunnel",namespace="pks-system",pod="fluent-bit-28q24",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="ghostunnel",namespace="pks-system",pod="fluent-bit-2wxpc",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="ghostunnel",namespace="pks-system",pod="fluent-bit-2wxpc",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="kube-state-metrics",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="kube-state-metrics",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="kubernetes-dashboard",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="kubernetes-dashboard",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="metric-controller",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="metric-controller",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="metrics-server",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="metrics-server",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="node-exporter",namespace="kube-system",pod="node-exporter-h9ztk",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="node-exporter",namespace="kube-system",pod="node-exporter-h9ztk",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="node-exporter",namespace="kube-system",pod="node-exporter-vt5p5",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="node-exporter",namespace="kube-system",pod="node-exporter-vt5p5",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="observability-manager",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="observability-manager",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="sink-controller",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="sink-controller",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="state-updater",namespace="pks-system",pod="fluent-bit-28q24",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="state-updater",namespace="pks-system",pod="fluent-bit-28q24",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="state-updater",namespace="pks-system",pod="fluent-bit-2wxpc",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="state-updater",namespace="pks-system",pod="fluent-bit-2wxpc",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="telegraf",namespace="pks-system",pod="telegraf-f6znx",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="telegraf",namespace="pks-system",pod="telegraf-f6znx",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="telegraf",namespace="pks-system",pod="telegraf-hwf6n",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="telegraf",namespace="pks-system",pod="telegraf-hwf6n",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="validator",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="validator",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-s5bgz",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-s5bgz",reason="ErrImagePull"} 0
+kube_pod_container_status_waiting_reason{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-vfn5g",reason="ContainerCreating"} 0
+kube_pod_container_status_waiting_reason{container="vrops-cadvisor",namespace="pks-system",pod="vrops-cadvisor-vfn5g",reason="ErrImagePull"} 0
+# HELP kube_pod_created Unix creation timestamp
+# TYPE kube_pod_created gauge
+kube_pod_created{namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 1.563454127e+09
+kube_pod_created{namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 1.563454127e+09
+kube_pod_created{namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 1.563454127e+09
+kube_pod_created{namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 1.563859208e+09
+kube_pod_created{namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 1.563454135e+09
+kube_pod_created{namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 1.563454132e+09
+kube_pod_created{namespace="kube-system",pod="node-exporter-h9ztk"} 1.563859208e+09
+kube_pod_created{namespace="kube-system",pod="node-exporter-vt5p5"} 1.563859208e+09
+kube_pod_created{namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 1.563454142e+09
+kube_pod_created{namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 1.563454142e+09
+kube_pod_created{namespace="pks-system",pod="fluent-bit-28q24"} 1.563858517e+09
+kube_pod_created{namespace="pks-system",pod="fluent-bit-2wxpc"} 1.563858517e+09
+kube_pod_created{namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 1.563454142e+09
+kube_pod_created{namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 1.563454139e+09
+kube_pod_created{namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 1.563454142e+09
+kube_pod_created{namespace="pks-system",pod="telegraf-f6znx"} 1.563859413e+09
+kube_pod_created{namespace="pks-system",pod="telegraf-hwf6n"} 1.563859423e+09
+kube_pod_created{namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 1.563859017e+09
+kube_pod_created{namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 1.563454143e+09
+kube_pod_created{namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 1.563454179e+09
+kube_pod_created{namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 1.563454179e+09
+# HELP kube_pod_info Information about pod.
+# TYPE kube_pod_info gauge
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.42",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="coredns-54586579f6-k2qxh",pod_ip="10.200.25.2"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.42",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="kube-state-metrics-5c4f5b885f-9rtmh",pod_ip="10.200.25.10"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.42",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="kubernetes-dashboard-6c68548bc9-hqg9h",pod_ip="10.200.25.4"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.42",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="metrics-server-5475446b7f-d5ptz",pod_ip="10.200.25.3"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.42",namespace="kube-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="node-exporter-vt5p5",pod_ip="10.10.14.42"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.42",namespace="pks-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="fluent-bit-28q24",pod_ip="10.200.25.9"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.42",namespace="pks-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="observability-manager-8d95f455d-bq6vh",pod_ip="10.200.25.5"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.42",namespace="pks-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="sink-controller-b6bbd7d68-pkz8k",pod_ip="10.200.25.6"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.42",namespace="pks-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="telegraf-hwf6n",pod_ip="10.10.14.42"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.42",namespace="pks-system",node="4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8",pod="vrops-cadvisor-vfn5g",pod_ip="10.10.14.42"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.43",namespace="kube-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="coredns-54586579f6-4gdx7",pod_ip="10.200.64.3"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.43",namespace="kube-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="coredns-54586579f6-qmpp9",pod_ip="10.200.64.2"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.43",namespace="kube-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="node-exporter-h9ztk",pod_ip="10.10.14.43"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.43",namespace="pks-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="cert-generator-v0.19-2wl5k",pod_ip="10.200.64.5"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.43",namespace="pks-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="event-controller-5c764cbc6-pj96f",pod_ip="10.200.64.8"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.43",namespace="pks-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="fluent-bit-2wxpc",pod_ip="10.200.64.9"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.43",namespace="pks-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="metric-controller-585878fc8c-ph2wk",pod_ip="10.200.64.4"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.43",namespace="pks-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="telegraf-f6znx",pod_ip="10.10.14.43"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.43",namespace="pks-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="telemetry-agent-776d45f8d8-lm62p",pod_ip="10.200.64.10"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.43",namespace="pks-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="validator-8568fd5c8f-mfhw6",pod_ip="10.200.64.6"} 1
+kube_pod_info{created_by_kind="<none>",created_by_name="<none>",host_ip="10.10.14.43",namespace="pks-system",node="cd09acfe-de87-41e2-beab-b2d7bc4987ac",pod="vrops-cadvisor-s5bgz",pod_ip="10.10.14.43"} 1
+# HELP kube_pod_labels Kubernetes labels converted to Prometheus labels.
+# TYPE kube_pod_labels gauge
+kube_pod_labels{label_k8s_app="kube-dns",label_pod_template_hash="54586579f6",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 1
+kube_pod_labels{label_k8s_app="kube-dns",label_pod_template_hash="54586579f6",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 1
+kube_pod_labels{label_k8s_app="kube-dns",label_pod_template_hash="54586579f6",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 1
+kube_pod_labels{label_k8s_app="kubernetes-dashboard",label_pod_template_hash="6c68548bc9",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 1
+kube_pod_labels{label_k8s_app="metrics-server",label_pod_template_hash="5475446b7f",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 1
+kube_pod_labels{label_app="observability-manager",label_pod_template_hash="8d95f455d",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 1
+kube_pod_labels{label_app="telemetry-agent",label_pod_template_hash="776d45f8d8",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 1
+kube_pod_labels{label_app="event-controller",label_pod_template_hash="5c764cbc6",label_safeToDelete="true",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 1
+kube_pod_labels{label_app="metric-controller",label_pod_template_hash="585878fc8c",label_safeToDelete="true",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 1
+kube_pod_labels{label_app="sink-controller",label_pod_template_hash="b6bbd7d68",label_safeToDelete="true",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 1
+kube_pod_labels{label_grafanak8sapp="true",label_k8s_app="kube-state-metrics",label_pod_template_hash="5c4f5b885f",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 1
+kube_pod_labels{label_app="validator",label_pod_template_hash="8568fd5c8f",label_safeToDelete="true",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 1
+kube_pod_labels{label_controller_uid="6b90310d-a95a-11e9-a794-005056963a93",label_job="cert-generator",label_job_name="cert-generator-v0.19",label_safeToDelete="true",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 1
+kube_pod_labels{label_controller_revision_hash="6f4cbccb97",label_name="vrops-cadvisor",label_pod_template_generation="1",label_version="v0.31.0",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 1
+kube_pod_labels{label_controller_revision_hash="6f4cbccb97",label_name="vrops-cadvisor",label_pod_template_generation="1",label_version="v0.31.0",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 1
+kube_pod_labels{label_controller_revision_hash="6f5747c6c",label_daemon="node-exporter",label_grafanak8sapp="true",label_pod_template_generation="1",namespace="kube-system",pod="node-exporter-h9ztk"} 1
+kube_pod_labels{label_controller_revision_hash="6f5747c6c",label_daemon="node-exporter",label_grafanak8sapp="true",label_pod_template_generation="1",namespace="kube-system",pod="node-exporter-vt5p5"} 1
+kube_pod_labels{label_app="telegraf",label_controller_revision_hash="78d799c649",label_pod_template_generation="1",label_safeToDelete="true",namespace="pks-system",pod="telegraf-f6znx"} 1
+kube_pod_labels{label_app="telegraf",label_controller_revision_hash="78d799c649",label_pod_template_generation="1",label_safeToDelete="true",namespace="pks-system",pod="telegraf-hwf6n"} 1
+kube_pod_labels{label_app="fluent-bit-ds",label_controller_revision_hash="b499cdff8",label_k8s_app="logging-agent",label_kubernetes_io_cluster_service="true",label_pod_template_generation="1",label_safeToDelete="true",label_version="v1",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_labels{label_app="fluent-bit-ds",label_controller_revision_hash="b499cdff8",label_k8s_app="logging-agent",label_kubernetes_io_cluster_service="true",label_pod_template_generation="1",label_safeToDelete="true",label_version="v1",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+# HELP kube_pod_owner Information about the Pod's owner.
+# TYPE kube_pod_owner gauge
+kube_pod_owner{namespace="kube-system",owner_is_controller="true",owner_kind="DaemonSet",owner_name="node-exporter",pod="node-exporter-h9ztk"} 1
+kube_pod_owner{namespace="kube-system",owner_is_controller="true",owner_kind="DaemonSet",owner_name="node-exporter",pod="node-exporter-vt5p5"} 1
+kube_pod_owner{namespace="kube-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="coredns-54586579f6",pod="coredns-54586579f6-4gdx7"} 1
+kube_pod_owner{namespace="kube-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="coredns-54586579f6",pod="coredns-54586579f6-k2qxh"} 1
+kube_pod_owner{namespace="kube-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="coredns-54586579f6",pod="coredns-54586579f6-qmpp9"} 1
+kube_pod_owner{namespace="kube-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="kube-state-metrics-5c4f5b885f",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 1
+kube_pod_owner{namespace="kube-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="kubernetes-dashboard-6c68548bc9",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 1
+kube_pod_owner{namespace="kube-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="metrics-server-5475446b7f",pod="metrics-server-5475446b7f-d5ptz"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="DaemonSet",owner_name="fluent-bit",pod="fluent-bit-28q24"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="DaemonSet",owner_name="fluent-bit",pod="fluent-bit-2wxpc"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="DaemonSet",owner_name="telegraf",pod="telegraf-f6znx"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="DaemonSet",owner_name="telegraf",pod="telegraf-hwf6n"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="DaemonSet",owner_name="vrops-cadvisor",pod="vrops-cadvisor-s5bgz"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="DaemonSet",owner_name="vrops-cadvisor",pod="vrops-cadvisor-vfn5g"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="Job",owner_name="cert-generator-v0.19",pod="cert-generator-v0.19-2wl5k"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="event-controller-5c764cbc6",pod="event-controller-5c764cbc6-pj96f"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="metric-controller-585878fc8c",pod="metric-controller-585878fc8c-ph2wk"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="observability-manager-8d95f455d",pod="observability-manager-8d95f455d-bq6vh"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="sink-controller-b6bbd7d68",pod="sink-controller-b6bbd7d68-pkz8k"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="telemetry-agent-776d45f8d8",pod="telemetry-agent-776d45f8d8-lm62p"} 1
+kube_pod_owner{namespace="pks-system",owner_is_controller="true",owner_kind="ReplicaSet",owner_name="validator-8568fd5c8f",pod="validator-8568fd5c8f-mfhw6"} 1
+# HELP kube_pod_start_time Start time in unix timestamp for a pod.
+# TYPE kube_pod_start_time gauge
+kube_pod_start_time{namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 1.563454127e+09
+kube_pod_start_time{namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 1.563454127e+09
+kube_pod_start_time{namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 1.563454127e+09
+kube_pod_start_time{namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 1.563859208e+09
+kube_pod_start_time{namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 1.563454135e+09
+kube_pod_start_time{namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 1.563454132e+09
+kube_pod_start_time{namespace="kube-system",pod="node-exporter-h9ztk"} 1.563859208e+09
+kube_pod_start_time{namespace="kube-system",pod="node-exporter-vt5p5"} 1.563859208e+09
+kube_pod_start_time{namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 1.563454142e+09
+kube_pod_start_time{namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 1.563454142e+09
+kube_pod_start_time{namespace="pks-system",pod="fluent-bit-28q24"} 1.563858517e+09
+kube_pod_start_time{namespace="pks-system",pod="fluent-bit-2wxpc"} 1.563858517e+09
+kube_pod_start_time{namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 1.563454142e+09
+kube_pod_start_time{namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 1.563454139e+09
+kube_pod_start_time{namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 1.563454142e+09
+kube_pod_start_time{namespace="pks-system",pod="telegraf-f6znx"} 1.563859413e+09
+kube_pod_start_time{namespace="pks-system",pod="telegraf-hwf6n"} 1.563859423e+09
+kube_pod_start_time{namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 1.563859017e+09
+kube_pod_start_time{namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 1.563454143e+09
+kube_pod_start_time{namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 1.56345418e+09
+kube_pod_start_time{namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 1.56345418e+09
+# HELP kube_pod_status_phase The pods current phase.
+# TYPE kube_pod_status_phase gauge
+kube_pod_status_phase{namespace="kube-system",phase="Failed",pod="coredns-54586579f6-4gdx7"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Failed",pod="coredns-54586579f6-k2qxh"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Failed",pod="coredns-54586579f6-qmpp9"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Failed",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Failed",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Failed",pod="metrics-server-5475446b7f-d5ptz"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Failed",pod="node-exporter-h9ztk"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Failed",pod="node-exporter-vt5p5"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Pending",pod="coredns-54586579f6-4gdx7"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Pending",pod="coredns-54586579f6-k2qxh"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Pending",pod="coredns-54586579f6-qmpp9"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Pending",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Pending",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Pending",pod="metrics-server-5475446b7f-d5ptz"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Pending",pod="node-exporter-h9ztk"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Pending",pod="node-exporter-vt5p5"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Running",pod="coredns-54586579f6-4gdx7"} 1
+kube_pod_status_phase{namespace="kube-system",phase="Running",pod="coredns-54586579f6-k2qxh"} 1
+kube_pod_status_phase{namespace="kube-system",phase="Running",pod="coredns-54586579f6-qmpp9"} 1
+kube_pod_status_phase{namespace="kube-system",phase="Running",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 1
+kube_pod_status_phase{namespace="kube-system",phase="Running",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 1
+kube_pod_status_phase{namespace="kube-system",phase="Running",pod="metrics-server-5475446b7f-d5ptz"} 1
+kube_pod_status_phase{namespace="kube-system",phase="Running",pod="node-exporter-h9ztk"} 1
+kube_pod_status_phase{namespace="kube-system",phase="Running",pod="node-exporter-vt5p5"} 1
+kube_pod_status_phase{namespace="kube-system",phase="Succeeded",pod="coredns-54586579f6-4gdx7"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Succeeded",pod="coredns-54586579f6-k2qxh"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Succeeded",pod="coredns-54586579f6-qmpp9"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Succeeded",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Succeeded",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Succeeded",pod="metrics-server-5475446b7f-d5ptz"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Succeeded",pod="node-exporter-h9ztk"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Succeeded",pod="node-exporter-vt5p5"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Unknown",pod="coredns-54586579f6-4gdx7"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Unknown",pod="coredns-54586579f6-k2qxh"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Unknown",pod="coredns-54586579f6-qmpp9"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Unknown",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Unknown",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Unknown",pod="metrics-server-5475446b7f-d5ptz"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Unknown",pod="node-exporter-h9ztk"} 0
+kube_pod_status_phase{namespace="kube-system",phase="Unknown",pod="node-exporter-vt5p5"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="fluent-bit-28q24"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="fluent-bit-2wxpc"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="metric-controller-585878fc8c-ph2wk"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="observability-manager-8d95f455d-bq6vh"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="sink-controller-b6bbd7d68-pkz8k"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="telegraf-f6znx"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="telegraf-hwf6n"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="telemetry-agent-776d45f8d8-lm62p"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="validator-8568fd5c8f-mfhw6"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="vrops-cadvisor-s5bgz"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Failed",pod="vrops-cadvisor-vfn5g"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="fluent-bit-28q24"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="fluent-bit-2wxpc"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="metric-controller-585878fc8c-ph2wk"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="observability-manager-8d95f455d-bq6vh"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="sink-controller-b6bbd7d68-pkz8k"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="telegraf-f6znx"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="telegraf-hwf6n"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="telemetry-agent-776d45f8d8-lm62p"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="validator-8568fd5c8f-mfhw6"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="vrops-cadvisor-s5bgz"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Pending",pod="vrops-cadvisor-vfn5g"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="event-controller-5c764cbc6-pj96f"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="fluent-bit-28q24"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="fluent-bit-2wxpc"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="metric-controller-585878fc8c-ph2wk"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="observability-manager-8d95f455d-bq6vh"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="sink-controller-b6bbd7d68-pkz8k"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="telegraf-f6znx"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="telegraf-hwf6n"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="telemetry-agent-776d45f8d8-lm62p"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="validator-8568fd5c8f-mfhw6"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="vrops-cadvisor-s5bgz"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Running",pod="vrops-cadvisor-vfn5g"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="cert-generator-v0.19-2wl5k"} 1
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="fluent-bit-28q24"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="fluent-bit-2wxpc"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="metric-controller-585878fc8c-ph2wk"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="observability-manager-8d95f455d-bq6vh"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="sink-controller-b6bbd7d68-pkz8k"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="telegraf-f6znx"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="telegraf-hwf6n"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="telemetry-agent-776d45f8d8-lm62p"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="validator-8568fd5c8f-mfhw6"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="vrops-cadvisor-s5bgz"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Succeeded",pod="vrops-cadvisor-vfn5g"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="fluent-bit-28q24"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="fluent-bit-2wxpc"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="metric-controller-585878fc8c-ph2wk"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="observability-manager-8d95f455d-bq6vh"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="sink-controller-b6bbd7d68-pkz8k"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="telegraf-f6znx"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="telegraf-hwf6n"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="telemetry-agent-776d45f8d8-lm62p"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="validator-8568fd5c8f-mfhw6"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="vrops-cadvisor-s5bgz"} 0
+kube_pod_status_phase{namespace="pks-system",phase="Unknown",pod="vrops-cadvisor-vfn5g"} 0
+# HELP kube_pod_status_ready Describes whether the pod is ready to serve requests.
+# TYPE kube_pod_status_ready gauge
+kube_pod_status_ready{condition="false",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 0
+kube_pod_status_ready{condition="false",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 0
+kube_pod_status_ready{condition="false",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 0
+kube_pod_status_ready{condition="false",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 0
+kube_pod_status_ready{condition="false",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0
+kube_pod_status_ready{condition="false",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 0
+kube_pod_status_ready{condition="false",namespace="kube-system",pod="node-exporter-h9ztk"} 1
+kube_pod_status_ready{condition="false",namespace="kube-system",pod="node-exporter-vt5p5"} 1
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 1
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 0
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 0
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 0
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="telegraf-f6znx"} 0
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="telegraf-hwf6n"} 0
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 0
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 0
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 0
+kube_pod_status_ready{condition="false",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 0
+kube_pod_status_ready{condition="true",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 1
+kube_pod_status_ready{condition="true",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 1
+kube_pod_status_ready{condition="true",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 1
+kube_pod_status_ready{condition="true",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 1
+kube_pod_status_ready{condition="true",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 1
+kube_pod_status_ready{condition="true",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 1
+kube_pod_status_ready{condition="true",namespace="kube-system",pod="node-exporter-h9ztk"} 0
+kube_pod_status_ready{condition="true",namespace="kube-system",pod="node-exporter-vt5p5"} 0
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 1
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 1
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 1
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 1
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="telegraf-f6znx"} 1
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="telegraf-hwf6n"} 1
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 1
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 1
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 1
+kube_pod_status_ready{condition="true",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 1
+kube_pod_status_ready{condition="unknown",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 0
+kube_pod_status_ready{condition="unknown",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 0
+kube_pod_status_ready{condition="unknown",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 0
+kube_pod_status_ready{condition="unknown",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 0
+kube_pod_status_ready{condition="unknown",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0
+kube_pod_status_ready{condition="unknown",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 0
+kube_pod_status_ready{condition="unknown",namespace="kube-system",pod="node-exporter-h9ztk"} 0
+kube_pod_status_ready{condition="unknown",namespace="kube-system",pod="node-exporter-vt5p5"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="telegraf-f6znx"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="telegraf-hwf6n"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 0
+kube_pod_status_ready{condition="unknown",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 0
+# HELP kube_pod_status_scheduled Describes the status of the scheduling process for the pod.
+# TYPE kube_pod_status_scheduled gauge
+kube_pod_status_scheduled{condition="false",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 0
+kube_pod_status_scheduled{condition="false",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 0
+kube_pod_status_scheduled{condition="false",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 0
+kube_pod_status_scheduled{condition="false",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 0
+kube_pod_status_scheduled{condition="false",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0
+kube_pod_status_scheduled{condition="false",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 0
+kube_pod_status_scheduled{condition="false",namespace="kube-system",pod="node-exporter-h9ztk"} 0
+kube_pod_status_scheduled{condition="false",namespace="kube-system",pod="node-exporter-vt5p5"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="telegraf-f6znx"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="telegraf-hwf6n"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 0
+kube_pod_status_scheduled{condition="false",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 0
+kube_pod_status_scheduled{condition="true",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 1
+kube_pod_status_scheduled{condition="true",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 1
+kube_pod_status_scheduled{condition="true",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 1
+kube_pod_status_scheduled{condition="true",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 1
+kube_pod_status_scheduled{condition="true",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 1
+kube_pod_status_scheduled{condition="true",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 1
+kube_pod_status_scheduled{condition="true",namespace="kube-system",pod="node-exporter-h9ztk"} 1
+kube_pod_status_scheduled{condition="true",namespace="kube-system",pod="node-exporter-vt5p5"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="fluent-bit-28q24"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="fluent-bit-2wxpc"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="telegraf-f6znx"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="telegraf-hwf6n"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 1
+kube_pod_status_scheduled{condition="true",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 1
+kube_pod_status_scheduled{condition="unknown",namespace="kube-system",pod="coredns-54586579f6-4gdx7"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="kube-system",pod="coredns-54586579f6-k2qxh"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="kube-system",pod="coredns-54586579f6-qmpp9"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="kube-system",pod="kube-state-metrics-5c4f5b885f-9rtmh"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="kube-system",pod="kubernetes-dashboard-6c68548bc9-hqg9h"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="kube-system",pod="metrics-server-5475446b7f-d5ptz"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="kube-system",pod="node-exporter-h9ztk"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="kube-system",pod="node-exporter-vt5p5"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="cert-generator-v0.19-2wl5k"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="event-controller-5c764cbc6-pj96f"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="fluent-bit-28q24"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="fluent-bit-2wxpc"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="metric-controller-585878fc8c-ph2wk"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="observability-manager-8d95f455d-bq6vh"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="sink-controller-b6bbd7d68-pkz8k"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="telegraf-f6znx"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="telegraf-hwf6n"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="telemetry-agent-776d45f8d8-lm62p"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="validator-8568fd5c8f-mfhw6"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="vrops-cadvisor-s5bgz"} 0
+kube_pod_status_scheduled{condition="unknown",namespace="pks-system",pod="vrops-cadvisor-vfn5g"} 0
+# HELP kube_replicaset_created Unix creation timestamp
+# TYPE kube_replicaset_created gauge
+kube_replicaset_created{namespace="kube-system",replicaset="coredns-54586579f6"} 1.563454127e+09
+kube_replicaset_created{namespace="kube-system",replicaset="kube-state-metrics-5c4f5b885f"} 1.563859208e+09
+kube_replicaset_created{namespace="kube-system",replicaset="kubernetes-dashboard-6c68548bc9"} 1.563454135e+09
+kube_replicaset_created{namespace="kube-system",replicaset="metrics-server-5475446b7f"} 1.563454132e+09
+kube_replicaset_created{namespace="pks-system",replicaset="event-controller-5c764cbc6"} 1.563454142e+09
+kube_replicaset_created{namespace="pks-system",replicaset="metric-controller-585878fc8c"} 1.563454142e+09
+kube_replicaset_created{namespace="pks-system",replicaset="observability-manager-8d95f455d"} 1.563454138e+09
+kube_replicaset_created{namespace="pks-system",replicaset="sink-controller-b6bbd7d68"} 1.563454142e+09
+kube_replicaset_created{namespace="pks-system",replicaset="telemetry-agent-776d45f8d8"} 1.563859017e+09
+kube_replicaset_created{namespace="pks-system",replicaset="validator-8568fd5c8f"} 1.563454142e+09
+# HELP kube_replicaset_metadata_generation Sequence number representing a specific generation of the desired state.
+# TYPE kube_replicaset_metadata_generation gauge
+kube_replicaset_metadata_generation{namespace="kube-system",replicaset="coredns-54586579f6"} 1
+kube_replicaset_metadata_generation{namespace="kube-system",replicaset="kube-state-metrics-5c4f5b885f"} 1
+kube_replicaset_metadata_generation{namespace="kube-system",replicaset="kubernetes-dashboard-6c68548bc9"} 1
+kube_replicaset_metadata_generation{namespace="kube-system",replicaset="metrics-server-5475446b7f"} 1
+kube_replicaset_metadata_generation{namespace="pks-system",replicaset="event-controller-5c764cbc6"} 1
+kube_replicaset_metadata_generation{namespace="pks-system",replicaset="metric-controller-585878fc8c"} 1
+kube_replicaset_metadata_generation{namespace="pks-system",replicaset="observability-manager-8d95f455d"} 1
+kube_replicaset_metadata_generation{namespace="pks-system",replicaset="sink-controller-b6bbd7d68"} 1
+kube_replicaset_metadata_generation{namespace="pks-system",replicaset="telemetry-agent-776d45f8d8"} 1
+kube_replicaset_metadata_generation{namespace="pks-system",replicaset="validator-8568fd5c8f"} 1
+# HELP kube_replicaset_spec_replicas Number of desired pods for a ReplicaSet.
+# TYPE kube_replicaset_spec_replicas gauge
+kube_replicaset_spec_replicas{namespace="kube-system",replicaset="coredns-54586579f6"} 3
+kube_replicaset_spec_replicas{namespace="kube-system",replicaset="kube-state-metrics-5c4f5b885f"} 1
+kube_replicaset_spec_replicas{namespace="kube-system",replicaset="kubernetes-dashboard-6c68548bc9"} 1
+kube_replicaset_spec_replicas{namespace="kube-system",replicaset="metrics-server-5475446b7f"} 1
+kube_replicaset_spec_replicas{namespace="pks-system",replicaset="event-controller-5c764cbc6"} 1
+kube_replicaset_spec_replicas{namespace="pks-system",replicaset="metric-controller-585878fc8c"} 1
+kube_replicaset_spec_replicas{namespace="pks-system",replicaset="observability-manager-8d95f455d"} 1
+kube_replicaset_spec_replicas{namespace="pks-system",replicaset="sink-controller-b6bbd7d68"} 1
+kube_replicaset_spec_replicas{namespace="pks-system",replicaset="telemetry-agent-776d45f8d8"} 1
+kube_replicaset_spec_replicas{namespace="pks-system",replicaset="validator-8568fd5c8f"} 1
+# HELP kube_replicaset_status_fully_labeled_replicas The number of fully labeled replicas per ReplicaSet.
+# TYPE kube_replicaset_status_fully_labeled_replicas gauge
+kube_replicaset_status_fully_labeled_replicas{namespace="kube-system",replicaset="coredns-54586579f6"} 3
+kube_replicaset_status_fully_labeled_replicas{namespace="kube-system",replicaset="kube-state-metrics-5c4f5b885f"} 1
+kube_replicaset_status_fully_labeled_replicas{namespace="kube-system",replicaset="kubernetes-dashboard-6c68548bc9"} 1
+kube_replicaset_status_fully_labeled_replicas{namespace="kube-system",replicaset="metrics-server-5475446b7f"} 1
+kube_replicaset_status_fully_labeled_replicas{namespace="pks-system",replicaset="event-controller-5c764cbc6"} 1
+kube_replicaset_status_fully_labeled_replicas{namespace="pks-system",replicaset="metric-controller-585878fc8c"} 1
+kube_replicaset_status_fully_labeled_replicas{namespace="pks-system",replicaset="observability-manager-8d95f455d"} 1
+kube_replicaset_status_fully_labeled_replicas{namespace="pks-system",replicaset="sink-controller-b6bbd7d68"} 1
+kube_replicaset_status_fully_labeled_replicas{namespace="pks-system",replicaset="telemetry-agent-776d45f8d8"} 1
+kube_replicaset_status_fully_labeled_replicas{namespace="pks-system",replicaset="validator-8568fd5c8f"} 1
+# HELP kube_replicaset_status_observed_generation The generation observed by the ReplicaSet controller.
+# TYPE kube_replicaset_status_observed_generation gauge
+kube_replicaset_status_observed_generation{namespace="kube-system",replicaset="coredns-54586579f6"} 1
+kube_replicaset_status_observed_generation{namespace="kube-system",replicaset="kube-state-metrics-5c4f5b885f"} 1
+kube_replicaset_status_observed_generation{namespace="kube-system",replicaset="kubernetes-dashboard-6c68548bc9"} 1
+kube_replicaset_status_observed_generation{namespace="kube-system",replicaset="metrics-server-5475446b7f"} 1
+kube_replicaset_status_observed_generation{namespace="pks-system",replicaset="event-controller-5c764cbc6"} 1
+kube_replicaset_status_observed_generation{namespace="pks-system",replicaset="metric-controller-585878fc8c"} 1
+kube_replicaset_status_observed_generation{namespace="pks-system",replicaset="observability-manager-8d95f455d"} 1
+kube_replicaset_status_observed_generation{namespace="pks-system",replicaset="sink-controller-b6bbd7d68"} 1
+kube_replicaset_status_observed_generation{namespace="pks-system",replicaset="telemetry-agent-776d45f8d8"} 1
+kube_replicaset_status_observed_generation{namespace="pks-system",replicaset="validator-8568fd5c8f"} 1
+# HELP kube_replicaset_status_ready_replicas The number of ready replicas per ReplicaSet.
+# TYPE kube_replicaset_status_ready_replicas gauge
+kube_replicaset_status_ready_replicas{namespace="kube-system",replicaset="coredns-54586579f6"} 3
+kube_replicaset_status_ready_replicas{namespace="kube-system",replicaset="kube-state-metrics-5c4f5b885f"} 1
+kube_replicaset_status_ready_replicas{namespace="kube-system",replicaset="kubernetes-dashboard-6c68548bc9"} 1
+kube_replicaset_status_ready_replicas{namespace="kube-system",replicaset="metrics-server-5475446b7f"} 1
+kube_replicaset_status_ready_replicas{namespace="pks-system",replicaset="event-controller-5c764cbc6"} 1
+kube_replicaset_status_ready_replicas{namespace="pks-system",replicaset="metric-controller-585878fc8c"} 1
+kube_replicaset_status_ready_replicas{namespace="pks-system",replicaset="observability-manager-8d95f455d"} 1
+kube_replicaset_status_ready_replicas{namespace="pks-system",replicaset="sink-controller-b6bbd7d68"} 1
+kube_replicaset_status_ready_replicas{namespace="pks-system",replicaset="telemetry-agent-776d45f8d8"} 1
+kube_replicaset_status_ready_replicas{namespace="pks-system",replicaset="validator-8568fd5c8f"} 1
+# HELP kube_replicaset_status_replicas The number of replicas per ReplicaSet.
+# TYPE kube_replicaset_status_replicas gauge
+kube_replicaset_status_replicas{namespace="kube-system",replicaset="coredns-54586579f6"} 3
+kube_replicaset_status_replicas{namespace="kube-system",replicaset="kube-state-metrics-5c4f5b885f"} 1
+kube_replicaset_status_replicas{namespace="kube-system",replicaset="kubernetes-dashboard-6c68548bc9"} 1
+kube_replicaset_status_replicas{namespace="kube-system",replicaset="metrics-server-5475446b7f"} 1
+kube_replicaset_status_replicas{namespace="pks-system",replicaset="event-controller-5c764cbc6"} 1
+kube_replicaset_status_replicas{namespace="pks-system",replicaset="metric-controller-585878fc8c"} 1
+kube_replicaset_status_replicas{namespace="pks-system",replicaset="observability-manager-8d95f455d"} 1
+kube_replicaset_status_replicas{namespace="pks-system",replicaset="sink-controller-b6bbd7d68"} 1
+kube_replicaset_status_replicas{namespace="pks-system",replicaset="telemetry-agent-776d45f8d8"} 1
+kube_replicaset_status_replicas{namespace="pks-system",replicaset="validator-8568fd5c8f"} 1
+# HELP kube_service_created Unix creation timestamp
+# TYPE kube_service_created gauge
+kube_service_created{namespace="default",service="kubernetes"} 1.56345336e+09
+kube_service_created{namespace="kube-system",service="kube-dns"} 1.563454127e+09
+kube_service_created{namespace="kube-system",service="kubernetes-dashboard"} 1.563454135e+09
+kube_service_created{namespace="kube-system",service="metrics-server"} 1.563454132e+09
+kube_service_created{namespace="pks-system",service="fluent-bit"} 1.563454142e+09
+kube_service_created{namespace="pks-system",service="validator"} 1.563454142e+09
+# HELP kube_service_info Information about service.
+# TYPE kube_service_info gauge
+kube_service_info{namespace="default",service="kubernetes"} 1
+kube_service_info{namespace="kube-system",service="kube-dns"} 1
+kube_service_info{namespace="kube-system",service="kubernetes-dashboard"} 1
+kube_service_info{namespace="kube-system",service="metrics-server"} 1
+kube_service_info{namespace="pks-system",service="fluent-bit"} 1
+kube_service_info{namespace="pks-system",service="validator"} 1
+# HELP kube_service_labels Kubernetes labels converted to Prometheus labels.
+# TYPE kube_service_labels gauge
+kube_service_labels{label_kubernetes_io_name="Metrics-server",namespace="kube-system",service="metrics-server"} 1
+kube_service_labels{label_k8s_app="kubernetes-dashboard",namespace="kube-system",service="kubernetes-dashboard"} 1
+kube_service_labels{label_component="apiserver",label_provider="kubernetes",namespace="default",service="kubernetes"} 1
+kube_service_labels{label_logs="true",label_safeToDelete="true",namespace="pks-system",service="fluent-bit"} 1
+kube_service_labels{label_k8s_app="kube-dns",label_kubernetes_io_cluster_service="true",label_kubernetes_io_name="CoreDNS",namespace="kube-system",service="kube-dns"} 1
+kube_service_labels{label_logs="true",label_metrics="true",label_safeToDelete="true",namespace="pks-system",service="validator"} 1

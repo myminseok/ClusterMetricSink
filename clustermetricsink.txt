@@ -1,0 +1,490 @@
+# HELP go_gc_duration_seconds A summary of the GC invocation durations.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 3.8392e-05
+go_gc_duration_seconds{quantile="0.25"} 9.9325e-05
+go_gc_duration_seconds{quantile="0.5"} 0.000136847
+go_gc_duration_seconds{quantile="0.75"} 0.000196367
+go_gc_duration_seconds{quantile="1"} 0.010028621
+go_gc_duration_seconds_sum 0.476499594
+go_gc_duration_seconds_count 1179
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 17
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 6.991736e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 4.834862184e+09
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 1.575469e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 6.5442592e+07
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 2.383872e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 6.991736e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 5.7901056e+07
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 8.51968e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 49794
+# HELP go_memstats_heap_released_bytes_total Total number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes_total counter
+go_memstats_heap_released_bytes_total 0
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 6.6420736e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.563936170074847e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 6.5492386e+07
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 3456
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 16384
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 92720
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 147456
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 9.349248e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 528075
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 688128
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 688128
+# HELP go_memstats_sys_bytes Number of bytes obtained by system. Sum of all system allocations.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 7.176012e+07
+# HELP kubernetes_node_cpu_usage_core_nanoseconds Telegraf collected metric
+# TYPE kubernetes_node_cpu_usage_core_nanoseconds untyped
+kubernetes_node_cpu_usage_core_nanoseconds{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 3.69859831752066e+14
+# HELP kubernetes_node_cpu_usage_nanocores Telegraf collected metric
+# TYPE kubernetes_node_cpu_usage_nanocores untyped
+kubernetes_node_cpu_usage_nanocores{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 2.02774349e+08
+# HELP kubernetes_node_fs_available_bytes Telegraf collected metric
+# TYPE kubernetes_node_fs_available_bytes untyped
+kubernetes_node_fs_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 2.449270784e+10
+# HELP kubernetes_node_fs_capacity_bytes Telegraf collected metric
+# TYPE kubernetes_node_fs_capacity_bytes untyped
+kubernetes_node_fs_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 2.9611773952e+10
+# HELP kubernetes_node_fs_used_bytes Telegraf collected metric
+# TYPE kubernetes_node_fs_used_bytes untyped
+kubernetes_node_fs_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 3.591241728e+09
+# HELP kubernetes_node_memory_available_bytes Telegraf collected metric
+# TYPE kubernetes_node_memory_available_bytes untyped
+kubernetes_node_memory_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 1.776939008e+09
+# HELP kubernetes_node_memory_major_page_faults Telegraf collected metric
+# TYPE kubernetes_node_memory_major_page_faults untyped
+kubernetes_node_memory_major_page_faults{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 3218
+# HELP kubernetes_node_memory_page_faults Telegraf collected metric
+# TYPE kubernetes_node_memory_page_faults untyped
+kubernetes_node_memory_page_faults{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 8.2186855e+08
+# HELP kubernetes_node_memory_rss_bytes Telegraf collected metric
+# TYPE kubernetes_node_memory_rss_bytes untyped
+kubernetes_node_memory_rss_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 5.52435712e+08
+# HELP kubernetes_node_memory_usage_bytes Telegraf collected metric
+# TYPE kubernetes_node_memory_usage_bytes untyped
+kubernetes_node_memory_usage_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 3.721019392e+09
+# HELP kubernetes_node_memory_working_set_bytes Telegraf collected metric
+# TYPE kubernetes_node_memory_working_set_bytes untyped
+kubernetes_node_memory_working_set_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 2.360045568e+09
+# HELP kubernetes_node_network_rx_bytes Telegraf collected metric
+# TYPE kubernetes_node_network_rx_bytes untyped
+kubernetes_node_network_rx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 1.1227294885e+10
+# HELP kubernetes_node_network_rx_errors Telegraf collected metric
+# TYPE kubernetes_node_network_rx_errors untyped
+kubernetes_node_network_rx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+# HELP kubernetes_node_network_tx_bytes Telegraf collected metric
+# TYPE kubernetes_node_network_tx_bytes untyped
+kubernetes_node_network_tx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 4.049864386e+09
+# HELP kubernetes_node_network_tx_errors Telegraf collected metric
+# TYPE kubernetes_node_network_tx_errors untyped
+kubernetes_node_network_tx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+# HELP kubernetes_node_runtime_image_fs_available_bytes Telegraf collected metric
+# TYPE kubernetes_node_runtime_image_fs_available_bytes untyped
+kubernetes_node_runtime_image_fs_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 4.6523461632e+10
+# HELP kubernetes_node_runtime_image_fs_capacity_bytes Telegraf collected metric
+# TYPE kubernetes_node_runtime_image_fs_capacity_bytes untyped
+kubernetes_node_runtime_image_fs_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 5.270837248e+10
+# HELP kubernetes_node_runtime_image_fs_used_bytes Telegraf collected metric
+# TYPE kubernetes_node_runtime_image_fs_used_bytes untyped
+kubernetes_node_runtime_image_fs_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 3.794500613e+09
+# HELP kubernetes_pod_container_cpu_usage_core_nanoseconds Telegraf collected metric
+# TYPE kubernetes_pod_container_cpu_usage_core_nanoseconds untyped
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 3.18496016982e+11
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 3.228656522e+10
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 2.9355828346e+10
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 5.752842926e+10
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 3.546739532e+09
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 1.013723934e+10
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 4.874993492e+09
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 1.90542111772e+11
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 1.5642897768e+10
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 1.20798350341e+11
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 2.07150566e+10
+kubernetes_pod_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 6.023522705949e+12
+# HELP kubernetes_pod_container_cpu_usage_nanocores Telegraf collected metric
+# TYPE kubernetes_pod_container_cpu_usage_nanocores untyped
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 4.017957e+06
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 468790
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 421160
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 603367
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 46670
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 94225
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 0
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 2.990875e+06
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 181134
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 2.731435e+06
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 207936
+kubernetes_pod_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 7.8091728e+07
+# HELP kubernetes_pod_container_logsfs_avaialble_bytes Telegraf collected metric
+# TYPE kubernetes_pod_container_logsfs_avaialble_bytes untyped
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 2.449270784e+10
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 2.449270784e+10
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 2.449270784e+10
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 2.449270784e+10
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 2.449270784e+10
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 2.449270784e+10
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 2.449270784e+10
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 2.449270784e+10
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 2.449270784e+10
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 2.449270784e+10
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 2.449270784e+10
+kubernetes_pod_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 2.449270784e+10
+# HELP kubernetes_pod_container_logsfs_capacity_bytes Telegraf collected metric
+# TYPE kubernetes_pod_container_logsfs_capacity_bytes untyped
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 2.9611773952e+10
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 2.9611773952e+10
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 2.9611773952e+10
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 2.9611773952e+10
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 2.9611773952e+10
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 2.9611773952e+10
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 2.9611773952e+10
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 2.9611773952e+10
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 2.9611773952e+10
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 2.9611773952e+10
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 2.9611773952e+10
+kubernetes_pod_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 2.9611773952e+10
+# HELP kubernetes_pod_container_logsfs_used_bytes Telegraf collected metric
+# TYPE kubernetes_pod_container_logsfs_used_bytes untyped
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 28672
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 28672
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 40960
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 28672
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 28672
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 4.079616e+06
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 28672
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 57344
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 544768
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 28672
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 28672
+kubernetes_pod_container_logsfs_used_bytes{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 663552
+# HELP kubernetes_pod_container_memory_major_page_faults Telegraf collected metric
+# TYPE kubernetes_pod_container_memory_major_page_faults untyped
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 244
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 18
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 12
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 430
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 1
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 190
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 140
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 214
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 4
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 69
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 0
+kubernetes_pod_container_memory_major_page_faults{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 14
+# HELP kubernetes_pod_container_memory_page_faults Telegraf collected metric
+# TYPE kubernetes_pod_container_memory_page_faults untyped
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 5115
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 3140
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 3940
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 268290
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 4558
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 4619
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 3947
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 16320
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 3861
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 15883
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 3121
+kubernetes_pod_container_memory_page_faults{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 7.346321e+06
+# HELP kubernetes_pod_container_memory_rss_bytes Telegraf collected metric
+# TYPE kubernetes_pod_container_memory_rss_bytes untyped
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 8.68352e+06
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 7.430144e+06
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 4.816896e+06
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 9.99424e+06
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 2.02752e+06
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 4.968448e+06
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 3.72736e+06
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 1.931264e+07
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 5.431296e+06
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 1.4352384e+07
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 6.504448e+06
+kubernetes_pod_container_memory_rss_bytes{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 6.3184896e+07
+# HELP kubernetes_pod_container_memory_usage_bytes Telegraf collected metric
+# TYPE kubernetes_pod_container_memory_usage_bytes untyped
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 3.8588416e+07
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 9.637888e+06
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 6.59456e+06
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 2.95288832e+08
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 5.320704e+06
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 2.7578368e+07
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 2.0873216e+07
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 4.5776896e+07
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 6.5536e+06
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 2.0119552e+07
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 7.299072e+06
+kubernetes_pod_container_memory_usage_bytes{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 6.7432448e+07
+# HELP kubernetes_pod_container_memory_working_set_bytes Telegraf collected metric
+# TYPE kubernetes_pod_container_memory_working_set_bytes untyped
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 1.5384576e+07
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 8.613888e+06
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 5.709824e+06
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 2.68333056e+08
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 5.287936e+06
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 1.103872e+07
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 7.294976e+06
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 2.537472e+07
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 6.201344e+06
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 1.593344e+07
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 6.381568e+06
+kubernetes_pod_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 6.713344e+07
+# HELP kubernetes_pod_container_rootfs_available_bytes Telegraf collected metric
+# TYPE kubernetes_pod_container_rootfs_available_bytes untyped
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 4.6523461632e+10
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 4.6523461632e+10
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 4.6523461632e+10
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 4.6523461632e+10
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 4.6523461632e+10
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 4.6523461632e+10
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 4.6523461632e+10
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 4.6523461632e+10
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 4.6523461632e+10
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 4.6523461632e+10
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 4.6523461632e+10
+kubernetes_pod_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 4.6523461632e+10
+# HELP kubernetes_pod_container_rootfs_capacity_bytes Telegraf collected metric
+# TYPE kubernetes_pod_container_rootfs_capacity_bytes untyped
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 5.270837248e+10
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 5.270837248e+10
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 5.270837248e+10
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 5.270837248e+10
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 5.270837248e+10
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 5.270837248e+10
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 5.270837248e+10
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 5.270837248e+10
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 5.270837248e+10
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 5.270837248e+10
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 5.270837248e+10
+kubernetes_pod_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 5.270837248e+10
+# HELP kubernetes_pod_container_rootfs_used_bytes Telegraf collected metric
+# TYPE kubernetes_pod_container_rootfs_used_bytes untyped
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="coredns",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 32768
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="fluent-bit",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 53248
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="ghostunnel",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 28672
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 2.019328e+06
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="greenplum",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 90112
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="greenplum-operator",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 40960
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="metric-controller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 24576
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="metrics-server",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 28672
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="state-updater",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 24576
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="telegraf",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 20480
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="tiller",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 20480
+kubernetes_pod_container_rootfs_used_bytes{cluster_name="my-cluster",container_name="vrops-cadvisor",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 36864
+# HELP kubernetes_pod_network_rx_bytes Telegraf collected metric
+# TYPE kubernetes_pod_network_rx_bytes untyped
+kubernetes_pod_network_rx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 442346
+kubernetes_pod_network_rx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 2.818602e+06
+kubernetes_pod_network_rx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 15890
+kubernetes_pod_network_rx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 5.4298792e+07
+kubernetes_pod_network_rx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 4.41802137e+08
+kubernetes_pod_network_rx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 7.893808e+06
+kubernetes_pod_network_rx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 4.646474e+06
+kubernetes_pod_network_rx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 438415
+kubernetes_pod_network_rx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 1.1227287532e+10
+kubernetes_pod_network_rx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 1.1227345096e+10
+# HELP kubernetes_pod_network_rx_errors Telegraf collected metric
+# TYPE kubernetes_pod_network_rx_errors untyped
+kubernetes_pod_network_rx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 0
+kubernetes_pod_network_rx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 0
+kubernetes_pod_network_rx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 0
+kubernetes_pod_network_rx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 0
+kubernetes_pod_network_rx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 0
+kubernetes_pod_network_rx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 0
+kubernetes_pod_network_rx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 0
+kubernetes_pod_network_rx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 0
+kubernetes_pod_network_rx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 0
+kubernetes_pod_network_rx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 0
+# HELP kubernetes_pod_network_tx_bytes Telegraf collected metric
+# TYPE kubernetes_pod_network_tx_bytes untyped
+kubernetes_pod_network_tx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 403213
+kubernetes_pod_network_tx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 1.3469397e+07
+kubernetes_pod_network_tx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 224
+kubernetes_pod_network_tx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 1.7884048e+07
+kubernetes_pod_network_tx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 3.5278049e+07
+kubernetes_pod_network_tx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 6.292134e+06
+kubernetes_pod_network_tx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 2.092083e+06
+kubernetes_pod_network_tx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 392166
+kubernetes_pod_network_tx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 4.04986114e+09
+kubernetes_pod_network_tx_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 4.049871209e+09
+# HELP kubernetes_pod_network_tx_errors Telegraf collected metric
+# TYPE kubernetes_pod_network_tx_errors untyped
+kubernetes_pod_network_tx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c"} 0
+kubernetes_pod_network_tx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0"} 0
+kubernetes_pod_network_tx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0"} 0
+kubernetes_pod_network_tx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf"} 0
+kubernetes_pod_network_tx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk"} 0
+kubernetes_pod_network_tx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v"} 0
+kubernetes_pod_network_tx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f"} 0
+kubernetes_pod_network_tx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs"} 0
+kubernetes_pod_network_tx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk"} 0
+kubernetes_pod_network_tx_errors{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz"} 0
+# HELP kubernetes_pod_volume_available_bytes Telegraf collected metric
+# TYPE kubernetes_pod_volume_available_bytes untyped
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c",volume_name="greenplum-operator-service-account-token-vs59l"} 2.06848e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0",volume_name="default-token-52m8p"} 2.06848e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0",volume_name="gp-ds-pgdata"} 2.615619584e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0",volume_name="ssh-key-volume"} 2.068484096e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0",volume_name="default-token-52m8p"} 2.06848e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0",volume_name="gp-ds-pgdata"} 2.9218111488e+10
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0",volume_name="ssh-key-volume"} 2.068484096e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf",volume_name="coredns-token-jnqw7"} 2.06848e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk",volume_name="metrics-server-secrets"} 2.068475904e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk",volume_name="metrics-server-token-nwrnk"} 2.06848e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk",volume_name="tmp-dir"} 2.4492724224e+10
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v",volume_name="tiller-token-dlwt8"} 2.06848e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="fluent-bit-certs"} 2.068484096e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="fluent-bit-token-7zwsb"} 2.06848e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="keystore"} 2.4492732416e+10
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="pks-ca"} 2.068484096e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs",volume_name="metric-controller-token-bz8c7"} 2.06848e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk",volume_name="telegraf-token-kgvvz"} 2.06848e+09
+kubernetes_pod_volume_available_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz",volume_name="vrops-cadvisor-token-jxfvq"} 2.06848e+09
+# HELP kubernetes_pod_volume_capacity_bytes Telegraf collected metric
+# TYPE kubernetes_pod_volume_capacity_bytes untyped
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c",volume_name="greenplum-operator-service-account-token-vs59l"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0",volume_name="default-token-52m8p"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0",volume_name="gp-ds-pgdata"} 2.885738496e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0",volume_name="ssh-key-volume"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0",volume_name="default-token-52m8p"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0",volume_name="gp-ds-pgdata"} 2.939496448e+10
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0",volume_name="ssh-key-volume"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf",volume_name="coredns-token-jnqw7"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk",volume_name="metrics-server-secrets"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk",volume_name="metrics-server-token-nwrnk"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk",volume_name="tmp-dir"} 2.9611773952e+10
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v",volume_name="tiller-token-dlwt8"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="fluent-bit-certs"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="fluent-bit-token-7zwsb"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="keystore"} 2.9611773952e+10
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="pks-ca"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs",volume_name="metric-controller-token-bz8c7"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk",volume_name="telegraf-token-kgvvz"} 2.068492288e+09
+kubernetes_pod_volume_capacity_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz",volume_name="vrops-cadvisor-token-jxfvq"} 2.068492288e+09
+# HELP kubernetes_pod_volume_used_bytes Telegraf collected metric
+# TYPE kubernetes_pod_volume_used_bytes untyped
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="default",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="greenplum-operator-86b86d8444-nzc9c",volume_name="greenplum-operator-service-account-token-vs59l"} 12288
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0",volume_name="default-token-52m8p"} 12288
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0",volume_name="gp-ds-pgdata"} 2.53341696e+08
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="master-0",volume_name="ssh-key-volume"} 8192
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0",volume_name="default-token-52m8p"} 12288
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0",volume_name="gp-ds-pgdata"} 1.60075776e+08
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="gp-ds",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="segment-a-0",volume_name="ssh-key-volume"} 8192
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="coredns-54586579f6-slkkf",volume_name="coredns-token-jnqw7"} 12288
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk",volume_name="metrics-server-secrets"} 16384
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk",volume_name="metrics-server-token-nwrnk"} 12288
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metrics-server-5475446b7f-6hxdk",volume_name="tmp-dir"} 4096
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="kube-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="tiller-deploy-6d65d78679-grn7v",volume_name="tiller-token-dlwt8"} 12288
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="fluent-bit-certs"} 8192
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="fluent-bit-token-7zwsb"} 12288
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="keystore"} 12288
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="fluent-bit-tbc9f",volume_name="pks-ca"} 8192
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="metric-controller-585878fc8c-7cjqs",volume_name="metric-controller-token-bz8c7"} 12288
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="telegraf-8xvvk",volume_name="telegraf-token-kgvvz"} 12288
+kubernetes_pod_volume_used_bytes{cluster_name="my-cluster",host="105bff8b-5673-409f-ad45-588e19dc7a09",namespace="pks-system",node_name="105bff8b-5673-409f-ad45-588e19dc7a09",pod_name="vrops-cadvisor-wqjvz",volume_name="vrops-cadvisor-token-jxfvq"} 12288
+# HELP kubernetes_system_container_cpu_usage_core_nanoseconds Telegraf collected metric
+# TYPE kubernetes_system_container_cpu_usage_core_nanoseconds untyped
+kubernetes_system_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="kubelet",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+kubernetes_system_container_cpu_usage_core_nanoseconds{cluster_name="my-cluster",container_name="pods",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 1.6754121856332e+14
+# HELP kubernetes_system_container_cpu_usage_nanocores Telegraf collected metric
+# TYPE kubernetes_system_container_cpu_usage_nanocores untyped
+kubernetes_system_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="kubelet",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+kubernetes_system_container_cpu_usage_nanocores{cluster_name="my-cluster",container_name="pods",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 9.8047973e+07
+# HELP kubernetes_system_container_logsfs_avaialble_bytes Telegraf collected metric
+# TYPE kubernetes_system_container_logsfs_avaialble_bytes untyped
+kubernetes_system_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="kubelet",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+kubernetes_system_container_logsfs_avaialble_bytes{cluster_name="my-cluster",container_name="pods",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+# HELP kubernetes_system_container_logsfs_capacity_bytes Telegraf collected metric
+# TYPE kubernetes_system_container_logsfs_capacity_bytes untyped
+kubernetes_system_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="kubelet",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+kubernetes_system_container_logsfs_capacity_bytes{cluster_name="my-cluster",container_name="pods",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+# HELP kubernetes_system_container_memory_major_page_faults Telegraf collected metric
+# TYPE kubernetes_system_container_memory_major_page_faults untyped
+kubernetes_system_container_memory_major_page_faults{cluster_name="my-cluster",container_name="kubelet",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+kubernetes_system_container_memory_major_page_faults{cluster_name="my-cluster",container_name="pods",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+# HELP kubernetes_system_container_memory_page_faults Telegraf collected metric
+# TYPE kubernetes_system_container_memory_page_faults untyped
+kubernetes_system_container_memory_page_faults{cluster_name="my-cluster",container_name="kubelet",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+kubernetes_system_container_memory_page_faults{cluster_name="my-cluster",container_name="pods",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+# HELP kubernetes_system_container_memory_rss_bytes Telegraf collected metric
+# TYPE kubernetes_system_container_memory_rss_bytes untyped
+kubernetes_system_container_memory_rss_bytes{cluster_name="my-cluster",container_name="kubelet",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+kubernetes_system_container_memory_rss_bytes{cluster_name="my-cluster",container_name="pods",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 1.5087616e+08
+# HELP kubernetes_system_container_memory_usage_bytes Telegraf collected metric
+# TYPE kubernetes_system_container_memory_usage_bytes untyped
+kubernetes_system_container_memory_usage_bytes{cluster_name="my-cluster",container_name="kubelet",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+kubernetes_system_container_memory_usage_bytes{cluster_name="my-cluster",container_name="pods",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 5.57965312e+08
+# HELP kubernetes_system_container_memory_working_set_bytes Telegraf collected metric
+# TYPE kubernetes_system_container_memory_working_set_bytes untyped
+kubernetes_system_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="kubelet",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+kubernetes_system_container_memory_working_set_bytes{cluster_name="my-cluster",container_name="pods",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 4.49265664e+08
+# HELP kubernetes_system_container_rootfs_available_bytes Telegraf collected metric
+# TYPE kubernetes_system_container_rootfs_available_bytes untyped
+kubernetes_system_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="kubelet",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+kubernetes_system_container_rootfs_available_bytes{cluster_name="my-cluster",container_name="pods",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+# HELP kubernetes_system_container_rootfs_capacity_bytes Telegraf collected metric
+# TYPE kubernetes_system_container_rootfs_capacity_bytes untyped
+kubernetes_system_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="kubelet",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+kubernetes_system_container_rootfs_capacity_bytes{cluster_name="my-cluster",container_name="pods",host="105bff8b-5673-409f-ad45-588e19dc7a09",node_name="105bff8b-5673-409f-ad45-588e19dc7a09"} 0
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 120.81
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 65536
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 8
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 4.7992832e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.5638572932e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 3.98430208e+08

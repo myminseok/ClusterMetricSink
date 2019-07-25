@@ -1,0 +1,15 @@
+apiVersion: apps.pivotal.io/v1beta1
+kind: ClusterMetricSink
+metadata:
+  name: promcloudsink
+spec:
+  inputs:
+  - type: prometheus
+    urls: ["http://kube-state-metrics.pks-system.svc.cluster.local:8080/metrics"]
+    #urls: ["http://10.100.200.14:8080/metrics"]
+  outputs:
+  - type: prometheus_client
+    listen: ":9273"
+    basic_username: "Foo"
+    basic_password: "Bar"
+    path: "/metrics"
