@@ -8,7 +8,18 @@
 ## installation
 
 ### kube-state-metrics
-it comes with k8s cluster out of box which is create by PKS, in pks-system namespace.
+- it comes with k8s cluster out of box which is create by PKS if you enabled 'wavefront integration' PKS tile.(wavefront uses kube-state-metrics https://docs.wavefront.com/kubernetes.html)
+- otherwise you can install manually following https://github.com/kubernetes/kube-state-metrics/tree/master/kubernetes
+```
+kubectl apply -f kube-state-metrics-service-account.yaml
+kubectl apply -f kube-state-metrics-cluster-role.yaml
+kubectl apply -f kube-state-metrics-cluster-role-binding.yaml
+kubectl apply -f kube-state-metrics-deployment.yaml
+kubectl apply -f kube-state-metrics-service.yaml
+
+kubectl get events -n kube-system
+
+```
 
 ### deploy ClusterMetricSink
 deploy ClusterMetricSink to each k8s cluster.
