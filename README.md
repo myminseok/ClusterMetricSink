@@ -54,6 +54,13 @@ deploy to k8s cluster.
 ```
 kubectl apply -f ClusterMetricSink.yml -n pks-system
 ```
+ ssh into opsman VM. and verify metrics is collected from ClusterMetricSink. 
+
+```
+curl -k http://Foo:Bar@<K8s_worker_node_ip>:9273/metrics | grep kube_pod_info
+kube_pod_info{cluster_name="mkim-small2",created_by_kind="ReplicaSet",created_by_name="telemetry-agent-776d45f8d8",host="dfcf02e9-fc29-4a52-8529-6d9bc40e8d8b",host_ip="10.10.14.53",namespace="pks-system",node="dfcf02e9-fc29-4a52-8529-6d9bc40e8d8b",pod="telemetry-agent-776d45f8d8-wl57x",pod_ip="10.200.57.8",priority_class="",uid="a67b1774-af5d-11e9-b4e1-00505696ee6a",url="http://10.100.200.201:8080/metrics"} 1
+
+```
 
 ### install Reliability View for PCF
 - Prometheus Server, Grafana will deployed by Reliability View for PCF.
