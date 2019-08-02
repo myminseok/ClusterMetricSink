@@ -41,7 +41,7 @@ spec:
     path: "/metrics"
 
 ```
-by default telegraf pod out of bix, doesn't support kubernetes dns. so there are two options for this.
+by default telegraf pod doesn't support kubernetes dns. so there are two options for this.
 
 - option 1) replace <YOUR-svc-CLUSTER-IP> with CLUSTER-IP of kube-state-metrics.
 ```
