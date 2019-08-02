@@ -1,7 +1,7 @@
 # ClusterMetricsSink 
 
 ```
-<kube-state-metrics(pod)>  <== <ClusterMetricsSink(pod)> <== <Prometheus Server> <== <Grafana>
+<kube-state-metrics(pod)>  <==poll and fetch  == <ClusterMetricsSink(pod)> <==poll and fetch == <Prometheus Server> <== <Grafana>
 
 ```
 
