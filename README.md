@@ -41,12 +41,26 @@ spec:
     path: "/metrics"
 
 ```
-- replace <YOUR-svc-CLUSTER-IP> with CLUSTER-IP of kube-state-metrics 
-  
+by default telegraf pod out of bix, doesn't support kubernetes dns. so there are two options for this.
+
+- option 1) replace <YOUR-svc-CLUSTER-IP> with CLUSTER-IP of kube-state-metrics.
 ```
 $kubectl get svc --all-namespaces
 NAMESPACE     NAME                   TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        
 pks-system    kube-state-metrics     ClusterIP   10.100.200.14    <none>        8080/TCP,8081/TCP   
+```
+
+- option2) enable k8s dns for telegraf pod by modifying DemonSet. and use kube-state-metrics.pks-system.svc.cluster.local in the ClusterMetricSink.
+```
+$ kubectl edit ds telegraf  -n pks-system
+  => change 'dnsPolicy: ClusterFirst' to 'dnsPolicy: ClusterFirstWithHostNet'
+
+$ kubectl exec -it telegraf-bp7rw -n pks-system /bin/bash
+telegraf@4d6edf0d-93fc-4e0c-b342-82a5c1dd76b8:/$ cat /etc/resolv.conf
+nameserver 10.100.200.2
+search pks-system.svc.cluster.local svc.cluster.local cluster.local
+options ndots:5
+  
 ```
   
 deploy to k8s cluster.
